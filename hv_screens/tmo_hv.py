@@ -9,7 +9,7 @@ def get_macros():
     # Get the dict of macros needed to display all widgets
     names = ['CVMI']
     prefixes = ['TMO:MPOD:01']
-    modules = range(9)
+    modules = range(10)
     channels = range(23)
 
     macros = []
