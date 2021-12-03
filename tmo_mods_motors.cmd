@@ -1,7 +1,7 @@
 #!/bin/bash
 
-#source /reg/g/pcds/pyps/conda/py36env.sh
-source /reg/g/pcds/pyps/conda/dev_conda
+#source /cds/group/pcds/pyps/conda/pcds_conda
+source /cds/group/pcds/pyps/conda/dev_conda
 
 typhos --layout flow --display-type embed --size 1250,1800 \
   "pcdsdevices.epics_motor.SmarAct[{'prefix':'LM1K4:INT_MP1_DLY1', 'name':'LM1K4:INT_MP1_DLY1'}]" \
