@@ -7,8 +7,8 @@ from pydm import Display
 
 def get_macros():
     # Get the dict of macros needed to display all widgets
-    names = ['CVMI']
-    prefixes = ['TMO:MPOD:01']
+    names = ['TMO HV1', 'TMO HV2']
+    prefixes = ['TMO:MPOD:01', 'TMO:MPOD:02']
     modules = range(10)
     channels = range(23)
 
