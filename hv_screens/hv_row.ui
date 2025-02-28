@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>799</width>
-    <height>36</height>
+    <width>964</width>
+    <height>38</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -76,30 +76,48 @@
     </widget>
    </item>
    <item>
-    <widget class="PyDMLabel" name="is_on">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>30</width>
-       <height>0</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>30</width>
-       <height>16777215</height>
-      </size>
-     </property>
+    <widget class="PyDMByteIndicator" name="PyDMByteIndicator">
      <property name="toolTip">
+      <string/>
+     </property>
+     <property name="alarmSensitiveContent" stdset="0">
+      <bool>false</bool>
+     </property>
+     <property name="alarmSensitiveBorder" stdset="0">
+      <bool>false</bool>
+     </property>
+     <property name="PyDMToolTip" stdset="0">
       <string/>
      </property>
      <property name="channel" stdset="0">
       <string>ca://${PREFIX}:M${MOD}:C${CH}:isOn</string>
+     </property>
+     <property name="offColor" stdset="0">
+      <color alpha="0">
+       <red>255</red>
+       <green>15</green>
+       <blue>15</blue>
+      </color>
+     </property>
+     <property name="showLabels" stdset="0">
+      <bool>false</bool>
+     </property>
+     <property name="bigEndian" stdset="0">
+      <bool>false</bool>
+     </property>
+     <property name="circles" stdset="0">
+      <bool>false</bool>
+     </property>
+     <property name="numBits" stdset="0">
+      <number>1</number>
+     </property>
+     <property name="shift" stdset="0">
+      <number>0</number>
+     </property>
+     <property name="labels" stdset="0">
+      <stringlist>
+       <string></string>
+      </stringlist>
      </property>
     </widget>
    </item>
@@ -278,16 +296,19 @@
       <set>Qt::AlignCenter</set>
      </property>
      <property name="precision" stdset="0">
-      <number>3</number>
+      <number>0</number>
      </property>
      <property name="showUnits" stdset="0">
       <bool>true</bool>
      </property>
      <property name="precisionFromPV" stdset="0">
-      <bool>false</bool>
+      <bool>true</bool>
      </property>
      <property name="channel" stdset="0">
       <string>ca://${PREFIX}:M${MOD}:C${CH}:CurrentMeasure</string>
+     </property>
+     <property name="displayFormat" stdset="0">
+      <enum>PyDMLabel::Exponential</enum>
      </property>
     </widget>
    </item>
@@ -317,53 +338,118 @@
     </widget>
    </item>
    <item>
-    <widget class="PyDMShellCommand" name="expert_button">
-     <property name="sizePolicy">
-      <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
-       <horstretch>0</horstretch>
-       <verstretch>0</verstretch>
-      </sizepolicy>
-     </property>
-     <property name="minimumSize">
-      <size>
-       <width>75</width>
-       <height>0</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>75</width>
-       <height>16777215</height>
-      </size>
-     </property>
+    <widget class="PyDMByteIndicator" name="PyDMByteIndicator_2">
      <property name="toolTip">
       <string/>
      </property>
-     <property name="text">
-      <string>Expert</string>
+     <property name="alarmSensitiveContent" stdset="0">
+      <bool>false</bool>
      </property>
-     <property name="redirectCommandOutput" stdset="0">
-      <bool>true</bool>
+     <property name="alarmSensitiveBorder" stdset="0">
+      <bool>false</bool>
      </property>
-     <property name="commands" stdset="0">
+     <property name="PyDMToolTip" stdset="0">
+      <string/>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://${PREFIX}:M${MOD}:C${CH}:isTrip</string>
+     </property>
+     <property name="offColor" stdset="0">
+      <color alpha="0">
+       <red>255</red>
+       <green>15</green>
+       <blue>15</blue>
+      </color>
+     </property>
+     <property name="showLabels" stdset="0">
+      <bool>false</bool>
+     </property>
+     <property name="bigEndian" stdset="0">
+      <bool>false</bool>
+     </property>
+     <property name="circles" stdset="0">
+      <bool>false</bool>
+     </property>
+     <property name="numBits" stdset="0">
+      <number>1</number>
+     </property>
+     <property name="shift" stdset="0">
+      <number>0</number>
+     </property>
+     <property name="labels" stdset="0">
       <stringlist>
-       <string>/cds/home/z/zlentz/temp/hv_sandbox/module.cmd ${MOD}</string>
+       <string>Bit 0</string>
       </stringlist>
      </property>
     </widget>
    </item>
    <item>
-    <spacer name="horizontalSpacer">
-     <property name="orientation">
-      <enum>Qt::Horizontal</enum>
+    <widget class="PyDMByteIndicator" name="PyDMByteIndicator_3">
+     <property name="toolTip">
+      <string/>
      </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>40</width>
-       <height>20</height>
-      </size>
+     <property name="alarmSensitiveBorder" stdset="0">
+      <bool>false</bool>
      </property>
-    </spacer>
+     <property name="channel" stdset="0">
+      <string>ca://${PREFIX}:M${MOD}:C${CH}:EventTrip</string>
+     </property>
+     <property name="offColor" stdset="0">
+      <color alpha="0">
+       <red>255</red>
+       <green>15</green>
+       <blue>15</blue>
+      </color>
+     </property>
+     <property name="showLabels" stdset="0">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="PyDMByteIndicator" name="PyDMByteIndicator_4">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="alarmSensitiveBorder" stdset="0">
+      <bool>false</bool>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://${PREFIX}:M${MOD}:C${CH}:isEmergency</string>
+     </property>
+     <property name="offColor" stdset="0">
+      <color alpha="0">
+       <red>255</red>
+       <green>15</green>
+       <blue>15</blue>
+      </color>
+     </property>
+     <property name="showLabels" stdset="0">
+      <bool>false</bool>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="PyDMPushButton" name="PyDMPushButton">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="text">
+      <string>Reset Faults</string>
+     </property>
+     <property name="channel" stdset="0">
+      <string>ca://${PREFIX}:M${MOD}:Control:doClear</string>
+     </property>
+     <property name="pressValue" stdset="0">
+      <string>1</string>
+     </property>
+     <property name="releaseValue" stdset="0">
+      <string>0</string>
+     </property>
+     <property name="writeWhenRelease" stdset="0">
+      <bool>true</bool>
+     </property>
+    </widget>
    </item>
   </layout>
  </widget>
@@ -374,6 +460,11 @@
    <header>pydm.widgets.label</header>
   </customwidget>
   <customwidget>
+   <class>PyDMByteIndicator</class>
+   <extends>QWidget</extends>
+   <header>pydm.widgets.byte</header>
+  </customwidget>
+  <customwidget>
    <class>PyDMLineEdit</class>
    <extends>QLineEdit</extends>
    <header>pydm.widgets.line_edit</header>
@@ -382,11 +473,6 @@
    <class>PyDMPushButton</class>
    <extends>QPushButton</extends>
    <header>pydm.widgets.pushbutton</header>
-  </customwidget>
-  <customwidget>
-   <class>PyDMShellCommand</class>
-   <extends>QPushButton</extends>
-   <header>pydm.widgets.shell_command</header>
   </customwidget>
  </customwidgets>
  <resources/>

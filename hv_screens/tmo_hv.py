@@ -10,7 +10,7 @@ def get_macros():
     names = ['TMO HV1', 'TMO HV2']
     prefixes = ['TMO:MPOD:01', 'TMO:MPOD:02']
     modules = range(10)
-    channels = range(23)
+    channels = range(24)
 
     macros = []
     for name, pre in zip(names, prefixes):

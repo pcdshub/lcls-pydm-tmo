@@ -1,0 +1,3257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>686</width>
+    <height>582</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="PyDMTabWidget" name="PyDMTabWidget">
+     <property name="toolTip">
+      <string/>
+     </property>
+     <property name="whatsThis">
+      <string/>
+     </property>
+     <property name="currentIndex">
+      <number>2</number>
+     </property>
+     <property name="alarmChannels">
+      <stringlist>
+       <string></string>
+       <string></string>
+       <string></string>
+      </stringlist>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>Control</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="3">
+        <spacer name="horizontalSpacer_2">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="0" column="0">
+        <layout class="QGridLayout" name="gridLayout_Control">
+         <item row="4" column="0">
+          <widget class="PyDMByteIndicator" name="PyDMByteIndicator_SPY">
+           <property name="minimumSize">
+            <size>
+             <width>50</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>50</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:MMS:05:PLC:bError_RBV</string>
+           </property>
+           <property name="onColor" stdset="0">
+            <color>
+             <red>255</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="offColor" stdset="0">
+            <color>
+             <red>0</red>
+             <green>255</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="showLabels" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="circles" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="labels" stdset="0">
+            <stringlist>
+             <string>Sample Paddle Y (Stage Coordinates)</string>
+            </stringlist>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="PyDMLabel" name="PyDMLabel_11">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Sample Paddle X (Stage Coordinates)</string>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="0">
+          <widget class="PyDMByteIndicator" name="PyDMByteIndicator_NX">
+           <property name="minimumSize">
+            <size>
+             <width>50</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>50</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:MMS:01:PLC:bError_RBV</string>
+           </property>
+           <property name="onColor" stdset="0">
+            <color>
+             <red>255</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="offColor" stdset="0">
+            <color>
+             <red>0</red>
+             <green>255</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="showLabels" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="circles" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="labels" stdset="0">
+            <stringlist>
+             <string>Gas Jet X</string>
+            </stringlist>
+           </property>
+          </widget>
+         </item>
+         <item row="8" column="1">
+          <widget class="PyDMLabel" name="PyDMLabel_42">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Gas Jet Z</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="PyDMByteIndicator" name="PyDMByteIndicator_SPVY">
+           <property name="minimumSize">
+            <size>
+             <width>50</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>50</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:MMS:V5:PLC:bError_RBV</string>
+           </property>
+           <property name="onColor" stdset="0">
+            <color>
+             <red>255</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="offColor" stdset="0">
+            <color>
+             <red>0</red>
+             <green>255</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="showLabels" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="circles" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="labels" stdset="0">
+            <stringlist>
+             <string>Sample Paddle Y (Beam Coordinates)</string>
+            </stringlist>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="1">
+          <widget class="PyDMLabel" name="PyDMLabel_16">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Gas Jet Y</string>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="1">
+          <widget class="PyDMLabel" name="PyDMLabel_15">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Sample Paddle Z (Stage Coordinates)</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="PyDMLabel" name="PyDMLabel_14">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Sample Paddle Z (Beam Coordinates)</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="PyDMByteIndicator" name="PyDMByteIndicator_SPVX">
+           <property name="minimumSize">
+            <size>
+             <width>50</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>50</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:MMS:V4:PLC:bError_RBV</string>
+           </property>
+           <property name="onColor" stdset="0">
+            <color>
+             <red>255</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="offColor" stdset="0">
+            <color>
+             <red>0</red>
+             <green>255</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="showLabels" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="circles" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="labels" stdset="0">
+            <stringlist>
+             <string>Sample Paddle X (Beam Coordinates)</string>
+            </stringlist>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="1">
+          <widget class="PyDMLabel" name="PyDMLabel_13">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Gas Jet X</string>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="0">
+          <widget class="PyDMByteIndicator" name="PyDMByteIndicator_NY">
+           <property name="minimumSize">
+            <size>
+             <width>50</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>50</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="alarmSensitiveContent" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="alarmSensitiveBorder" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PyDMToolTip" stdset="0">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:MMS:02:PLC:bError_RBV</string>
+           </property>
+           <property name="onColor" stdset="0">
+            <color>
+             <red>255</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="offColor" stdset="0">
+            <color>
+             <red>0</red>
+             <green>255</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="showLabels" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="bigEndian" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="circles" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="numBits" stdset="0">
+            <number>1</number>
+           </property>
+           <property name="shift" stdset="0">
+            <number>0</number>
+           </property>
+           <property name="labels" stdset="0">
+            <stringlist>
+             <string>Gas Jet Y</string>
+            </stringlist>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="PyDMLabel" name="PyDMLabel_9">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Sample Paddle X (Beam Coordinates)</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="PyDMByteIndicator" name="PyDMByteIndicator_SPVZ">
+           <property name="minimumSize">
+            <size>
+             <width>50</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>50</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="alarmSensitiveContent" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="alarmSensitiveBorder" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PyDMToolTip" stdset="0">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:MMS:V6:PLC:bError_RBV</string>
+           </property>
+           <property name="onColor" stdset="0">
+            <color>
+             <red>255</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="offColor" stdset="0">
+            <color>
+             <red>0</red>
+             <green>255</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="showLabels" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="bigEndian" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="circles" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="numBits" stdset="0">
+            <number>1</number>
+           </property>
+           <property name="shift" stdset="0">
+            <number>0</number>
+           </property>
+           <property name="labels" stdset="0">
+            <stringlist>
+             <string>Sample Paddle Z (Beam Coordinates)</string>
+            </stringlist>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="PyDMLabel" name="PyDMLabel_12">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Sample Paddle Y (Stage Coordinates)</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="PyDMLabel" name="PyDMLabel_10">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="text">
+            <string>Sample Paddle Y (Beam Coordinates)</string>
+           </property>
+          </widget>
+         </item>
+         <item row="8" column="0">
+          <widget class="PyDMByteIndicator" name="PyDMByteIndicator_NZ">
+           <property name="minimumSize">
+            <size>
+             <width>50</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>50</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="alarmSensitiveContent" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="alarmSensitiveBorder" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PyDMToolTip" stdset="0">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:MMS:03:PLC:bError_RBV</string>
+           </property>
+           <property name="onColor" stdset="0">
+            <color>
+             <red>255</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="offColor" stdset="0">
+            <color>
+             <red>0</red>
+             <green>255</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="showLabels" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="bigEndian" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="circles" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="numBits" stdset="0">
+            <number>1</number>
+           </property>
+           <property name="shift" stdset="0">
+            <number>0</number>
+           </property>
+           <property name="labels" stdset="0">
+            <stringlist>
+             <string>Gas Jet Z</string>
+            </stringlist>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="PyDMByteIndicator" name="PyDMByteIndicator_SPX">
+           <property name="minimumSize">
+            <size>
+             <width>50</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>50</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:MMS:04:PLC:bError_RBV</string>
+           </property>
+           <property name="onColor" stdset="0">
+            <color>
+             <red>255</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="offColor" stdset="0">
+            <color>
+             <red>0</red>
+             <green>255</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="showLabels" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="circles" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="labels" stdset="0">
+            <stringlist>
+             <string>Sample Paddle X (Stage Coordinates)</string>
+            </stringlist>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="PyDMByteIndicator" name="PyDMByteIndicator_SPZ">
+           <property name="minimumSize">
+            <size>
+             <width>50</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>50</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="alarmSensitiveContent" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="alarmSensitiveBorder" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PyDMToolTip" stdset="0">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:MMS:06:PLC:bError_RBV</string>
+           </property>
+           <property name="onColor" stdset="0">
+            <color>
+             <red>255</red>
+             <green>0</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="offColor" stdset="0">
+            <color>
+             <red>0</red>
+             <green>255</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="showLabels" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="bigEndian" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="circles" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="numBits" stdset="0">
+            <number>1</number>
+           </property>
+           <property name="shift" stdset="0">
+            <number>0</number>
+           </property>
+           <property name="labels" stdset="0">
+            <stringlist>
+             <string>Sample Paddle Z (Stage Coordinates)</string>
+            </stringlist>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="PyDMByteIndicator" name="PyDMByteIndicator_SPVX_2">
+           <property name="minimumSize">
+            <size>
+             <width>50</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>50</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:SP:bVirtualAxesActive_RBV</string>
+           </property>
+           <property name="onColor" stdset="0">
+            <color>
+             <red>0</red>
+             <green>255</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="offColor" stdset="0">
+            <color>
+             <red>132</red>
+             <green>132</green>
+             <blue>132</blue>
+            </color>
+           </property>
+           <property name="showLabels" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="circles" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="labels" stdset="0">
+            <stringlist>
+             <string>Sample Paddle X (Beam Coordinates)</string>
+            </stringlist>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="PyDMByteIndicator" name="PyDMByteIndicator_SPVX_3">
+           <property name="minimumSize">
+            <size>
+             <width>50</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>50</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:SP:bVirtualAxesActive_RBV</string>
+           </property>
+           <property name="onColor" stdset="0">
+            <color>
+             <red>0</red>
+             <green>255</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="offColor" stdset="0">
+            <color>
+             <red>132</red>
+             <green>132</green>
+             <blue>132</blue>
+            </color>
+           </property>
+           <property name="showLabels" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="circles" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="labels" stdset="0">
+            <stringlist>
+             <string>Sample Paddle X (Beam Coordinates)</string>
+            </stringlist>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2">
+          <widget class="PyDMByteIndicator" name="PyDMByteIndicator_SPVX_4">
+           <property name="minimumSize">
+            <size>
+             <width>50</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>50</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:SP:bVirtualAxesActive_RBV</string>
+           </property>
+           <property name="onColor" stdset="0">
+            <color>
+             <red>0</red>
+             <green>255</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="offColor" stdset="0">
+            <color>
+             <red>132</red>
+             <green>132</green>
+             <blue>132</blue>
+            </color>
+           </property>
+           <property name="showLabels" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="circles" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="labels" stdset="0">
+            <stringlist>
+             <string>Sample Paddle X (Beam Coordinates)</string>
+            </stringlist>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="2">
+          <widget class="PyDMByteIndicator" name="PyDMByteIndicator_SPVX_6">
+           <property name="minimumSize">
+            <size>
+             <width>50</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>50</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:SP:bVirtualAxesActive_RBV</string>
+           </property>
+           <property name="onColor" stdset="0">
+            <color>
+             <red>132</red>
+             <green>132</green>
+             <blue>132</blue>
+            </color>
+           </property>
+           <property name="offColor" stdset="0">
+            <color>
+             <red>0</red>
+             <green>255</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="showLabels" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="circles" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="labels" stdset="0">
+            <stringlist>
+             <string>Sample Paddle X (Beam Coordinates)</string>
+            </stringlist>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="2">
+          <widget class="PyDMByteIndicator" name="PyDMByteIndicator_SPVX_5">
+           <property name="minimumSize">
+            <size>
+             <width>50</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>50</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:SP:bVirtualAxesActive_RBV</string>
+           </property>
+           <property name="onColor" stdset="0">
+            <color>
+             <red>132</red>
+             <green>132</green>
+             <blue>132</blue>
+            </color>
+           </property>
+           <property name="offColor" stdset="0">
+            <color>
+             <red>0</red>
+             <green>255</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="showLabels" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="circles" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="labels" stdset="0">
+            <stringlist>
+             <string>Sample Paddle X (Beam Coordinates)</string>
+            </stringlist>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="2">
+          <widget class="PyDMByteIndicator" name="PyDMByteIndicator_SPVX_7">
+           <property name="minimumSize">
+            <size>
+             <width>50</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>50</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:SP:bVirtualAxesActive_RBV</string>
+           </property>
+           <property name="onColor" stdset="0">
+            <color>
+             <red>132</red>
+             <green>132</green>
+             <blue>132</blue>
+            </color>
+           </property>
+           <property name="offColor" stdset="0">
+            <color>
+             <red>0</red>
+             <green>255</green>
+             <blue>0</blue>
+            </color>
+           </property>
+           <property name="showLabels" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="circles" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="labels" stdset="0">
+            <stringlist>
+             <string>Sample Paddle X (Beam Coordinates)</string>
+            </stringlist>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>Position Transform</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_5">
+       <item row="0" column="0">
+        <layout class="QGridLayout" name="gridLayout_4">
+         <item row="9" column="3">
+          <widget class="PyDMLabel" name="PyDMLabel_36">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="text">
+            <string>The measured z axis value in beam coordinates.</string>
+           </property>
+           <property name="precision" stdset="0">
+            <number>0</number>
+           </property>
+           <property name="showUnits" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="precisionFromPV" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="alarmSensitiveContent" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="alarmSensitiveBorder" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PyDMToolTip" stdset="0">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string/>
+           </property>
+           <property name="enableRichText" stdset="0">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="15" column="1">
+          <widget class="PyDMLabel" name="PyDMLabel_57">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="precision" stdset="0">
+            <number>3</number>
+           </property>
+           <property name="showUnits" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="precisionFromPV" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="alarmSensitiveContent" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="alarmSensitiveBorder" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PyDMToolTip" stdset="0">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:SP:VTransform3D:fMotorZMeas_RBV</string>
+           </property>
+           <property name="enableRichText" stdset="0">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="13" column="3">
+          <widget class="PyDMLabel" name="PyDMLabel_40">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="text">
+            <string>The measured x axis value in stage coordinates.</string>
+           </property>
+           <property name="precision" stdset="0">
+            <number>0</number>
+           </property>
+           <property name="showUnits" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="precisionFromPV" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="alarmSensitiveContent" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="alarmSensitiveBorder" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PyDMToolTip" stdset="0">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string/>
+           </property>
+           <property name="enableRichText" stdset="0">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="13" column="1">
+          <widget class="PyDMLabel" name="PyDMLabel_55">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="precision" stdset="0">
+            <number>3</number>
+           </property>
+           <property name="showUnits" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="precisionFromPV" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="alarmSensitiveContent" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="alarmSensitiveBorder" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PyDMToolTip" stdset="0">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:SP:VTransform3D:fMotorXMeas_RBV</string>
+           </property>
+           <property name="enableRichText" stdset="0">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="14" column="1">
+          <widget class="PyDMLabel" name="PyDMLabel_56">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="precision" stdset="0">
+            <number>3</number>
+           </property>
+           <property name="showUnits" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="precisionFromPV" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="alarmSensitiveContent" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="alarmSensitiveBorder" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PyDMToolTip" stdset="0">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:SP:VTransform3D:fMotorYMeas_RBV</string>
+           </property>
+           <property name="enableRichText" stdset="0">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="PyDMLabel" name="PyDMLabel_44">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="precision" stdset="0">
+            <number>3</number>
+           </property>
+           <property name="showUnits" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="precisionFromPV" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="alarmSensitiveContent" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="alarmSensitiveBorder" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PyDMToolTip" stdset="0">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:SP:VTransform3D:fBDeg_RBV</string>
+           </property>
+           <property name="enableRichText" stdset="0">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="0">
+          <widget class="PyDMLabel" name="PyDMLabel_18">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="precision" stdset="0">
+            <number>3</number>
+           </property>
+           <property name="showUnits" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="precisionFromPV" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="alarmSensitiveContent" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="alarmSensitiveBorder" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PyDMToolTip" stdset="0">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:SP:PTransform3D:fXSP_RBV</string>
+           </property>
+           <property name="enableRichText" stdset="0">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="3">
+          <widget class="PyDMLabel" name="PyDMLabel_58">
+           <property name="minimumSize">
+            <size>
+             <width>300</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Alpha - The first angle of rotation from beam coordinates to stage coordinates.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="textFormat">
+            <enum>Qt::RichText</enum>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="PyDMLabel" name="PyDMLabel_3">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:SP:PTransform3D:fBDeg_RBV</string>
+           </property>
+          </widget>
+         </item>
+         <item row="8" column="3">
+          <widget class="PyDMLabel" name="PyDMLabel_35">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="text">
+            <string>The measured y axis value in beam coordinates.</string>
+           </property>
+           <property name="precision" stdset="0">
+            <number>0</number>
+           </property>
+           <property name="showUnits" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="precisionFromPV" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="alarmSensitiveContent" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="alarmSensitiveBorder" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PyDMToolTip" stdset="0">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string/>
+           </property>
+           <property name="enableRichText" stdset="0">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="3">
+          <widget class="PyDMLabel" name="PyDMLabel_32">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="text">
+            <string>The current y axis setpoint in beam coordinates.</string>
+           </property>
+           <property name="precision" stdset="0">
+            <number>0</number>
+           </property>
+           <property name="showUnits" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="precisionFromPV" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="alarmSensitiveContent" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="alarmSensitiveBorder" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PyDMToolTip" stdset="0">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string/>
+           </property>
+           <property name="enableRichText" stdset="0">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="PyDMLabel" name="PyDMLabel_17">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:SP:PTransform3D:fGDeg_RBV</string>
+           </property>
+          </widget>
+         </item>
+         <item row="12" column="0">
+          <widget class="PyDMLabel" name="PyDMLabel_26">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="precision" stdset="0">
+            <number>3</number>
+           </property>
+           <property name="showUnits" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="precisionFromPV" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="alarmSensitiveContent" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="alarmSensitiveBorder" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PyDMToolTip" stdset="0">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:SP:PTransform3D:fMotorZSP_RBV</string>
+           </property>
+           <property name="enableRichText" stdset="0">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="PyDMLabel" name="PyDMLabel_45">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="precision" stdset="0">
+            <number>3</number>
+           </property>
+           <property name="showUnits" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="precisionFromPV" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="alarmSensitiveContent" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="alarmSensitiveBorder" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PyDMToolTip" stdset="0">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:SP:VTransform3D:fGDeg_RBV</string>
+           </property>
+           <property name="enableRichText" stdset="0">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="3">
+          <widget class="PyDMLabel" name="PyDMLabel_34">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="text">
+            <string>The measured x axis value in beam coordinates.</string>
+           </property>
+           <property name="precision" stdset="0">
+            <number>0</number>
+           </property>
+           <property name="showUnits" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="precisionFromPV" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="alarmSensitiveContent" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="alarmSensitiveBorder" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PyDMToolTip" stdset="0">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string/>
+           </property>
+           <property name="enableRichText" stdset="0">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="0">
+          <widget class="PyDMLabel" name="PyDMLabel_21">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="precision" stdset="0">
+            <number>3</number>
+           </property>
+           <property name="showUnits" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="precisionFromPV" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="alarmSensitiveContent" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="alarmSensitiveBorder" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PyDMToolTip" stdset="0">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:SP:PTransform3D:fXMeas_RBV</string>
+           </property>
+           <property name="enableRichText" stdset="0">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="15" column="3">
+          <widget class="PyDMLabel" name="PyDMLabel_30">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="text">
+            <string>The measured z axis value in stage coordinates.</string>
+           </property>
+           <property name="precision" stdset="0">
+            <number>0</number>
+           </property>
+           <property name="showUnits" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="precisionFromPV" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="alarmSensitiveContent" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="alarmSensitiveBorder" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PyDMToolTip" stdset="0">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string/>
+           </property>
+           <property name="enableRichText" stdset="0">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="8" column="0">
+          <widget class="PyDMLabel" name="PyDMLabel_22">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="precision" stdset="0">
+            <number>3</number>
+           </property>
+           <property name="showUnits" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="precisionFromPV" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="alarmSensitiveContent" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="alarmSensitiveBorder" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PyDMToolTip" stdset="0">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:SP:PTransform3D:fYMeas_RBV</string>
+           </property>
+           <property name="enableRichText" stdset="0">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="11" column="1">
+          <widget class="PyDMLabel" name="PyDMLabel_53">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="precision" stdset="0">
+            <number>3</number>
+           </property>
+           <property name="showUnits" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="precisionFromPV" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="alarmSensitiveContent" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="alarmSensitiveBorder" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PyDMToolTip" stdset="0">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:SP:VTransform3D:fMotorYSP_RBV</string>
+           </property>
+           <property name="enableRichText" stdset="0">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="3">
+          <widget class="QLabel" name="label_3">
+           <property name="text">
+            <string>Description</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="9" column="1">
+          <widget class="PyDMLabel" name="PyDMLabel_51">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="precision" stdset="0">
+            <number>3</number>
+           </property>
+           <property name="showUnits" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="precisionFromPV" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="alarmSensitiveContent" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="alarmSensitiveBorder" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PyDMToolTip" stdset="0">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:SP:VTransform3D:fZMeas_RBV</string>
+           </property>
+           <property name="enableRichText" stdset="0">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="0">
+          <widget class="PyDMLabel" name="PyDMLabel_19">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="precision" stdset="0">
+            <number>3</number>
+           </property>
+           <property name="showUnits" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="precisionFromPV" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="alarmSensitiveContent" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="alarmSensitiveBorder" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PyDMToolTip" stdset="0">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:SP:PTransform3D:fYSP_RBV</string>
+           </property>
+           <property name="enableRichText" stdset="0">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="14" column="3">
+          <widget class="PyDMLabel" name="PyDMLabel_41">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="text">
+            <string>The measured y axis value in stage coordinates.</string>
+           </property>
+           <property name="precision" stdset="0">
+            <number>0</number>
+           </property>
+           <property name="showUnits" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="precisionFromPV" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="alarmSensitiveContent" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="alarmSensitiveBorder" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PyDMToolTip" stdset="0">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string/>
+           </property>
+           <property name="enableRichText" stdset="0">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="14" column="0">
+          <widget class="PyDMLabel" name="PyDMLabel_28">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="precision" stdset="0">
+            <number>3</number>
+           </property>
+           <property name="showUnits" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="precisionFromPV" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="alarmSensitiveContent" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="alarmSensitiveBorder" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PyDMToolTip" stdset="0">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:SP:PTransform3D:fMotorYMeas_RBV</string>
+           </property>
+           <property name="enableRichText" stdset="0">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="8" column="1">
+          <widget class="PyDMLabel" name="PyDMLabel_50">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="precision" stdset="0">
+            <number>3</number>
+           </property>
+           <property name="showUnits" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="precisionFromPV" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="alarmSensitiveContent" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="alarmSensitiveBorder" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PyDMToolTip" stdset="0">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:SP:VTransform3D:fYMeas_RBV</string>
+           </property>
+           <property name="enableRichText" stdset="0">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="3">
+          <widget class="PyDMLabel" name="PyDMLabel_59">
+           <property name="minimumSize">
+            <size>
+             <width>300</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Beta - The second angle of rotation from beam coordinates to stage coordinates.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="textFormat">
+            <enum>Qt::RichText</enum>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="3">
+          <widget class="PyDMLabel" name="PyDMLabel_31">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="text">
+            <string>The current x axis setpoint in beam coordinates.</string>
+           </property>
+           <property name="precision" stdset="0">
+            <number>0</number>
+           </property>
+           <property name="showUnits" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="precisionFromPV" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="alarmSensitiveContent" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="alarmSensitiveBorder" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PyDMToolTip" stdset="0">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string/>
+           </property>
+           <property name="enableRichText" stdset="0">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="PyDMLabel" name="PyDMLabel_46">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="precision" stdset="0">
+            <number>3</number>
+           </property>
+           <property name="showUnits" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="precisionFromPV" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="alarmSensitiveContent" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="alarmSensitiveBorder" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PyDMToolTip" stdset="0">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:SP:VTransform3D:fXSP_RBV</string>
+           </property>
+           <property name="enableRichText" stdset="0">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="PyDMLabel" name="PyDMLabel_43">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="precision" stdset="0">
+            <number>3</number>
+           </property>
+           <property name="showUnits" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="precisionFromPV" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="alarmSensitiveContent" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="alarmSensitiveBorder" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PyDMToolTip" stdset="0">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:SP:VTransform3D:fADeg_RBV</string>
+           </property>
+           <property name="enableRichText" stdset="0">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="3">
+          <widget class="PyDMLabel" name="PyDMLabel_60">
+           <property name="minimumSize">
+            <size>
+             <width>300</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Gamma - The third angle of rotation from beam coordinates to stage coordinates.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="textFormat">
+            <enum>Qt::RichText</enum>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="0">
+          <widget class="PyDMLabel" name="PyDMLabel_20">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="precision" stdset="0">
+            <number>3</number>
+           </property>
+           <property name="showUnits" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="precisionFromPV" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="alarmSensitiveContent" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="alarmSensitiveBorder" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PyDMToolTip" stdset="0">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:SP:PTransform3D:fZSP_RBV</string>
+           </property>
+           <property name="enableRichText" stdset="0">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="1">
+          <widget class="PyDMLabel" name="PyDMLabel_49">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="precision" stdset="0">
+            <number>3</number>
+           </property>
+           <property name="showUnits" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="precisionFromPV" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="alarmSensitiveContent" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="alarmSensitiveBorder" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PyDMToolTip" stdset="0">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:SP:VTransform3D:fXMeas_RBV</string>
+           </property>
+           <property name="enableRichText" stdset="0">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="3">
+          <widget class="PyDMLabel" name="PyDMLabel_33">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="text">
+            <string>The current z axis setpoint in beam coordinates.</string>
+           </property>
+           <property name="precision" stdset="0">
+            <number>0</number>
+           </property>
+           <property name="showUnits" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="precisionFromPV" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="alarmSensitiveContent" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="alarmSensitiveBorder" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PyDMToolTip" stdset="0">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string/>
+           </property>
+           <property name="enableRichText" stdset="0">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="15" column="0">
+          <widget class="PyDMLabel" name="PyDMLabel_29">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="precision" stdset="0">
+            <number>3</number>
+           </property>
+           <property name="showUnits" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="precisionFromPV" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="alarmSensitiveContent" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="alarmSensitiveBorder" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PyDMToolTip" stdset="0">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:SP:PTransform3D:fMotorZMeas_RBV</string>
+           </property>
+           <property name="enableRichText" stdset="0">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="11" column="3">
+          <widget class="PyDMLabel" name="PyDMLabel_38">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="text">
+            <string>The calculated y axis setpoint in stage coordinates.</string>
+           </property>
+           <property name="precision" stdset="0">
+            <number>0</number>
+           </property>
+           <property name="showUnits" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="precisionFromPV" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="alarmSensitiveContent" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="alarmSensitiveBorder" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PyDMToolTip" stdset="0">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string/>
+           </property>
+           <property name="enableRichText" stdset="0">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="11" column="0">
+          <widget class="PyDMLabel" name="PyDMLabel_25">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="precision" stdset="0">
+            <number>3</number>
+           </property>
+           <property name="showUnits" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="precisionFromPV" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="alarmSensitiveContent" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="alarmSensitiveBorder" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PyDMToolTip" stdset="0">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:SP:PTransform3D:fMotorYSP_RBV</string>
+           </property>
+           <property name="enableRichText" stdset="0">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="13" column="0">
+          <widget class="PyDMLabel" name="PyDMLabel_27">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="precision" stdset="0">
+            <number>3</number>
+           </property>
+           <property name="showUnits" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="precisionFromPV" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="alarmSensitiveContent" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="alarmSensitiveBorder" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PyDMToolTip" stdset="0">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:SP:PTransform3D:fMotorXMeas_RBV</string>
+           </property>
+           <property name="enableRichText" stdset="0">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="1">
+          <widget class="PyDMLabel" name="PyDMLabel_48">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="precision" stdset="0">
+            <number>3</number>
+           </property>
+           <property name="showUnits" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="precisionFromPV" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="alarmSensitiveContent" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="alarmSensitiveBorder" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PyDMToolTip" stdset="0">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:SP:VTransform3D:fZSP_RBV</string>
+           </property>
+           <property name="enableRichText" stdset="0">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLabel" name="label_2">
+           <property name="text">
+            <string>Velocity</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="12" column="3">
+          <widget class="PyDMLabel" name="PyDMLabel_39">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="text">
+            <string>The calculated z axis setpoint in stage coordinates.</string>
+           </property>
+           <property name="precision" stdset="0">
+            <number>0</number>
+           </property>
+           <property name="showUnits" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="precisionFromPV" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="alarmSensitiveContent" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="alarmSensitiveBorder" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PyDMToolTip" stdset="0">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string/>
+           </property>
+           <property name="enableRichText" stdset="0">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="1">
+          <widget class="PyDMLabel" name="PyDMLabel_47">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="precision" stdset="0">
+            <number>3</number>
+           </property>
+           <property name="showUnits" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="precisionFromPV" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="alarmSensitiveContent" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="alarmSensitiveBorder" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PyDMToolTip" stdset="0">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:SP:VTransform3D:fYSP_RBV</string>
+           </property>
+           <property name="enableRichText" stdset="0">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="12" column="1">
+          <widget class="PyDMLabel" name="PyDMLabel_54">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="precision" stdset="0">
+            <number>3</number>
+           </property>
+           <property name="showUnits" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="precisionFromPV" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="alarmSensitiveContent" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="alarmSensitiveBorder" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PyDMToolTip" stdset="0">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:SP:VTransform3D:fMotorZSP_RBV</string>
+           </property>
+           <property name="enableRichText" stdset="0">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="10" column="3">
+          <widget class="PyDMLabel" name="PyDMLabel_37">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="text">
+            <string>The calculated x axis setpoint in stage coordinates.</string>
+           </property>
+           <property name="precision" stdset="0">
+            <number>0</number>
+           </property>
+           <property name="showUnits" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="precisionFromPV" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="alarmSensitiveContent" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="alarmSensitiveBorder" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PyDMToolTip" stdset="0">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string/>
+           </property>
+           <property name="enableRichText" stdset="0">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="PyDMLabel" name="PyDMLabel">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:SP:PTransform3D:fADeg_RBV</string>
+           </property>
+          </widget>
+         </item>
+         <item row="10" column="0">
+          <widget class="PyDMLabel" name="PyDMLabel_24">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="precision" stdset="0">
+            <number>3</number>
+           </property>
+           <property name="showUnits" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="precisionFromPV" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="alarmSensitiveContent" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="alarmSensitiveBorder" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PyDMToolTip" stdset="0">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:SP:PTransform3D:fMotorXSP_RBV</string>
+           </property>
+           <property name="enableRichText" stdset="0">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="10" column="1">
+          <widget class="PyDMLabel" name="PyDMLabel_52">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="precision" stdset="0">
+            <number>3</number>
+           </property>
+           <property name="showUnits" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="precisionFromPV" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="alarmSensitiveContent" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="alarmSensitiveBorder" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PyDMToolTip" stdset="0">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:SP:VTransform3D:fMotorXSP_RBV</string>
+           </property>
+           <property name="enableRichText" stdset="0">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label">
+           <property name="text">
+            <string>Position</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="9" column="0">
+          <widget class="PyDMLabel" name="PyDMLabel_23">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="precision" stdset="0">
+            <number>3</number>
+           </property>
+           <property name="showUnits" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="precisionFromPV" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="alarmSensitiveContent" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="alarmSensitiveBorder" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PyDMToolTip" stdset="0">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:SP:PTransform3D:fZMeas_RBV</string>
+           </property>
+           <property name="enableRichText" stdset="0">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QLabel" name="label_4">
+           <property name="text">
+            <string>Acceleration</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="PyDMLabel" name="PyDMLabel_62">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="precision" stdset="0">
+            <number>3</number>
+           </property>
+           <property name="showUnits" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="precisionFromPV" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="alarmSensitiveContent" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="alarmSensitiveBorder" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PyDMToolTip" stdset="0">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:SP:ATransform3D:fADeg_RBV</string>
+           </property>
+           <property name="enableRichText" stdset="0">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2">
+          <widget class="PyDMLabel" name="PyDMLabel_63">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="precision" stdset="0">
+            <number>3</number>
+           </property>
+           <property name="showUnits" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="precisionFromPV" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="alarmSensitiveContent" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="alarmSensitiveBorder" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PyDMToolTip" stdset="0">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:SP:ATransform3D:fBDeg_RBV</string>
+           </property>
+           <property name="enableRichText" stdset="0">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="2">
+          <widget class="PyDMLabel" name="PyDMLabel_64">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="precision" stdset="0">
+            <number>3</number>
+           </property>
+           <property name="showUnits" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="precisionFromPV" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="alarmSensitiveContent" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="alarmSensitiveBorder" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PyDMToolTip" stdset="0">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:SP:ATransform3D:fGDeg_RBV</string>
+           </property>
+           <property name="enableRichText" stdset="0">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="2">
+          <widget class="PyDMLabel" name="PyDMLabel_65">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="precision" stdset="0">
+            <number>3</number>
+           </property>
+           <property name="showUnits" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="precisionFromPV" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="alarmSensitiveContent" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="alarmSensitiveBorder" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PyDMToolTip" stdset="0">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:SP:ATransform3D:fXSP_RBV</string>
+           </property>
+           <property name="enableRichText" stdset="0">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="5" column="2">
+          <widget class="PyDMLabel" name="PyDMLabel_66">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="precision" stdset="0">
+            <number>3</number>
+           </property>
+           <property name="showUnits" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="precisionFromPV" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="alarmSensitiveContent" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="alarmSensitiveBorder" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PyDMToolTip" stdset="0">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:SP:ATransform3D:fYSP_RBV</string>
+           </property>
+           <property name="enableRichText" stdset="0">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="6" column="2">
+          <widget class="PyDMLabel" name="PyDMLabel_67">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="precision" stdset="0">
+            <number>3</number>
+           </property>
+           <property name="showUnits" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="precisionFromPV" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="alarmSensitiveContent" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="alarmSensitiveBorder" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PyDMToolTip" stdset="0">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:SP:ATransform3D:fZSP_RBV</string>
+           </property>
+           <property name="enableRichText" stdset="0">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="7" column="2">
+          <widget class="PyDMLabel" name="PyDMLabel_68">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="precision" stdset="0">
+            <number>3</number>
+           </property>
+           <property name="showUnits" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="precisionFromPV" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="alarmSensitiveContent" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="alarmSensitiveBorder" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PyDMToolTip" stdset="0">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:SP:ATransform3D:fXMeas_RBV</string>
+           </property>
+           <property name="enableRichText" stdset="0">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="8" column="2">
+          <widget class="PyDMLabel" name="PyDMLabel_69">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="precision" stdset="0">
+            <number>3</number>
+           </property>
+           <property name="showUnits" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="precisionFromPV" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="alarmSensitiveContent" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="alarmSensitiveBorder" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PyDMToolTip" stdset="0">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:SP:ATransform3D:fYMeas_RBV</string>
+           </property>
+           <property name="enableRichText" stdset="0">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="9" column="2">
+          <widget class="PyDMLabel" name="PyDMLabel_70">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="precision" stdset="0">
+            <number>3</number>
+           </property>
+           <property name="showUnits" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="precisionFromPV" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="alarmSensitiveContent" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="alarmSensitiveBorder" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PyDMToolTip" stdset="0">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:SP:ATransform3D:fZMeas_RBV</string>
+           </property>
+           <property name="enableRichText" stdset="0">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="10" column="2">
+          <widget class="PyDMLabel" name="PyDMLabel_71">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="precision" stdset="0">
+            <number>3</number>
+           </property>
+           <property name="showUnits" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="precisionFromPV" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="alarmSensitiveContent" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="alarmSensitiveBorder" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PyDMToolTip" stdset="0">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:SP:ATransform3D:fMotorXSP_RBV</string>
+           </property>
+           <property name="enableRichText" stdset="0">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="11" column="2">
+          <widget class="PyDMLabel" name="PyDMLabel_72">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="precision" stdset="0">
+            <number>3</number>
+           </property>
+           <property name="showUnits" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="precisionFromPV" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="alarmSensitiveContent" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="alarmSensitiveBorder" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PyDMToolTip" stdset="0">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:SP:ATransform3D:fMotorYSP_RBV</string>
+           </property>
+           <property name="enableRichText" stdset="0">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="12" column="2">
+          <widget class="PyDMLabel" name="PyDMLabel_73">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="precision" stdset="0">
+            <number>3</number>
+           </property>
+           <property name="showUnits" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="precisionFromPV" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="alarmSensitiveContent" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="alarmSensitiveBorder" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PyDMToolTip" stdset="0">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:SP:ATransform3D:fMotorZSP_RBV</string>
+           </property>
+           <property name="enableRichText" stdset="0">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="13" column="2">
+          <widget class="PyDMLabel" name="PyDMLabel_74">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="precision" stdset="0">
+            <number>3</number>
+           </property>
+           <property name="showUnits" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="precisionFromPV" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="alarmSensitiveContent" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="alarmSensitiveBorder" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PyDMToolTip" stdset="0">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:SP:ATransform3D:fMotorXMeas_RBV</string>
+           </property>
+           <property name="enableRichText" stdset="0">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="14" column="2">
+          <widget class="PyDMLabel" name="PyDMLabel_75">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="precision" stdset="0">
+            <number>3</number>
+           </property>
+           <property name="showUnits" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="precisionFromPV" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="alarmSensitiveContent" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="alarmSensitiveBorder" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PyDMToolTip" stdset="0">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:SP:ATransform3D:fMotorYMeas_RBV</string>
+           </property>
+           <property name="enableRichText" stdset="0">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="15" column="2">
+          <widget class="PyDMLabel" name="PyDMLabel_76">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="precision" stdset="0">
+            <number>3</number>
+           </property>
+           <property name="showUnits" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="precisionFromPV" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="alarmSensitiveContent" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="alarmSensitiveBorder" stdset="0">
+            <bool>true</bool>
+           </property>
+           <property name="PyDMToolTip" stdset="0">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:SP:ATransform3D:fMotorZMeas_RBV</string>
+           </property>
+           <property name="enableRichText" stdset="0">
+            <bool>false</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="0" column="1">
+        <spacer name="horizontalSpacer_3">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_3">
+      <attribute name="title">
+       <string>Testing</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_7">
+       <item row="0" column="0">
+        <layout class="QGridLayout" name="gridLayout_6">
+         <item row="4" column="0">
+          <widget class="PyDMLineEdit" name="PyDMLineEdit_3">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:SP:Gamma</string>
+           </property>
+          </widget>
+         </item>
+         <item row="4" column="1">
+          <widget class="PyDMLabel" name="PyDMLabel_8">
+           <property name="minimumSize">
+            <size>
+             <width>300</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Gamma - The third angle of rotation from beam coordinates to stage coordinates.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="textFormat">
+            <enum>Qt::RichText</enum>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0" colspan="2">
+          <widget class="PyDMByteIndicator" name="PyDMByteIndicator">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>50</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:SP:bVirtualAxesActive_RBV</string>
+           </property>
+           <property name="labels" stdset="0">
+            <stringlist>
+             <string>Virtual Axes Enabled = Green</string>
+            </stringlist>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="1">
+          <widget class="PyDMLabel" name="PyDMLabel_7">
+           <property name="minimumSize">
+            <size>
+             <width>300</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Beta - The second angle of rotation from beam coordinates to stage coordinates.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="textFormat">
+            <enum>Qt::RichText</enum>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="1">
+          <widget class="PyDMLabel" name="PyDMLabel_6">
+           <property name="minimumSize">
+            <size>
+             <width>300</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Alpha - The first angle of rotation from beamcoordinates to stage coordinates.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="textFormat">
+            <enum>Qt::RichText</enum>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0" colspan="2">
+          <widget class="PyDMLabel" name="PyDMLabel_61">
+           <property name="minimumSize">
+            <size>
+             <width>300</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="text">
+            <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Rotation is in the order : XYZ&lt;/p&gt;&lt;p&gt;Takes input position, velocity, and acceleration in beam coordinates.&lt;/p&gt;&lt;p&gt;Rotates beam coordinates frame of reference alpha degrees about X, then beta degrees about Y, then gamma degrees about Z. The result is the &lt;/p&gt;&lt;p&gt;Result is considered the position in stage coordinates.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+           </property>
+           <property name="textFormat">
+            <enum>Qt::RichText</enum>
+           </property>
+           <property name="wordWrap">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item row="3" column="0">
+          <widget class="PyDMLineEdit" name="PyDMLineEdit_2">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:SP:Beta</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="PyDMLineEdit" name="PyDMLineEdit">
+           <property name="toolTip">
+            <string/>
+           </property>
+           <property name="channel" stdset="0">
+            <string>ca://TMO:MRCO:SP:Alpha</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="0" column="1">
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PyDMTabWidget</class>
+   <extends>QTabWidget</extends>
+   <header>pydm.widgets.tab_bar</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMLabel</class>
+   <extends>QLabel</extends>
+   <header>pydm.widgets.label</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMByteIndicator</class>
+   <extends>QWidget</extends>
+   <header>pydm.widgets.byte</header>
+  </customwidget>
+  <customwidget>
+   <class>PyDMLineEdit</class>
+   <extends>QLineEdit</extends>
+   <header>pydm.widgets.line_edit</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,971 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>550</width>
+    <height>770</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_14">
+   <item>
+    <widget class="QScrollArea" name="scrollArea">
+     <property name="sizeAdjustPolicy">
+      <enum>QAbstractScrollArea::AdjustToContents</enum>
+     </property>
+     <property name="widgetResizable">
+      <bool>false</bool>
+     </property>
+     <widget class="QWidget" name="scrollAreaWidgetContents">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>0</y>
+        <width>530</width>
+        <height>750</height>
+       </rect>
+      </property>
+      <widget class="Line" name="line_9">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>520</y>
+         <width>131</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="groupBox">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>580</y>
+         <width>111</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>true</bool>
+       </property>
+       <property name="title">
+        <string>NOT ERR_ExtFault</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="PyDMByteIndicator" name="PyDMByteIndicator">
+          <property name="toolTip">
+           <string/>
+          </property>
+          <property name="channel" stdset="0">
+           <string>ca://${VFS}:ERR_Ext_RBV</string>
+          </property>
+          <property name="onColor" stdset="0">
+           <color>
+            <red>100</red>
+            <green>100</green>
+            <blue>100</blue>
+           </color>
+          </property>
+          <property name="offColor" stdset="0">
+           <color>
+            <red>0</red>
+            <green>255</green>
+            <blue>0</blue>
+           </color>
+          </property>
+          <property name="showLabels" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="circles" stdset="0">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="Line" name="line_4">
+       <property name="geometry">
+        <rect>
+         <x>310</x>
+         <y>630</y>
+         <width>20</width>
+         <height>91</height>
+        </rect>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_5">
+       <property name="geometry">
+        <rect>
+         <x>430</x>
+         <y>580</y>
+         <width>91</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>true</bool>
+       </property>
+       <property name="title">
+        <string>Open OK</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_5">
+        <item>
+         <widget class="PyDMByteIndicator" name="PyDMByteIndicator_5">
+          <property name="toolTip">
+           <string/>
+          </property>
+          <property name="channel" stdset="0">
+           <string>ca://${VFS}:OPN_OK_RBV</string>
+          </property>
+          <property name="showLabels" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="circles" stdset="0">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_16">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>480</y>
+         <width>101</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>true</bool>
+       </property>
+       <property name="title">
+        <string>NOT EXT ILK OK</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_15">
+        <item>
+         <widget class="PyDMByteIndicator" name="PyDMByteIndicator_15">
+          <property name="toolTip">
+           <string/>
+          </property>
+          <property name="channel" stdset="0">
+           <string>ca://${VFS}:EXT_ILK_OK_RBV</string>
+          </property>
+          <property name="onColor" stdset="0">
+           <color>
+            <red>100</red>
+            <green>100</green>
+            <blue>100</blue>
+           </color>
+          </property>
+          <property name="offColor" stdset="0">
+           <color>
+            <red>0</red>
+            <green>255</green>
+            <blue>0</blue>
+           </color>
+          </property>
+          <property name="showLabels" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="circles" stdset="0">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_11">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>280</y>
+         <width>101</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>true</bool>
+       </property>
+       <property name="title">
+        <string>NOT PRESS_OK</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_11">
+        <item>
+         <widget class="PyDMByteIndicator" name="PyDMByteIndicator_11">
+          <property name="toolTip">
+           <string/>
+          </property>
+          <property name="channel" stdset="0">
+           <string>calc://xPress_ok?IG1_ok=ca://LI2K4:IP1:GFS:01:PRESS_OK_RBV&amp;IG2_ok=ca://LI2K4:IP1:GFS:02:PRESS_OK_RBV&amp;IG3_ok=ca://LI2K4:IP1:GFS:03:PRESS_OK_RBV&amp;expr=(IG1_ok+IG2_ok+IG3_ok)&gt;1</string>
+          </property>
+          <property name="onColor" stdset="0">
+           <color>
+            <red>100</red>
+            <green>100</green>
+            <blue>100</blue>
+           </color>
+          </property>
+          <property name="offColor" stdset="0">
+           <color>
+            <red>0</red>
+            <green>255</green>
+            <blue>0</blue>
+           </color>
+          </property>
+          <property name="showLabels" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="circles" stdset="0">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_17">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>380</y>
+         <width>91</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>true</bool>
+       </property>
+       <property name="title">
+        <string>Trigger</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_16">
+        <item>
+         <widget class="PyDMByteIndicator" name="PyDMByteIndicator_16">
+          <property name="toolTip">
+           <string/>
+          </property>
+          <property name="channel" stdset="0">
+           <string>ca://${VFS}:TRIG_RBV</string>
+          </property>
+          <property name="showLabels" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="circles" stdset="0">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_13">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>670</y>
+         <width>101</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>true</bool>
+       </property>
+       <property name="title">
+        <string>Veto</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_12">
+        <item>
+         <widget class="PyDMByteIndicator" name="PyDMByteIndicator_12">
+          <property name="toolTip">
+           <string/>
+          </property>
+          <property name="channel" stdset="0">
+           <string>calc://xVeto?vetoValveClosed=ca://${VETO}:CLS_DI_RBV&amp;vetoValveOpen=ca://${VETO}:OPN_DI_RBV&amp;expr=vetoValveClosed and not vetoValveOpen</string>
+          </property>
+          <property name="showLabels" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="circles" stdset="0">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_14">
+       <property name="geometry">
+        <rect>
+         <x>430</x>
+         <y>280</y>
+         <width>91</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>true</bool>
+       </property>
+       <property name="title">
+        <string>Trigger</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_13">
+        <item>
+         <widget class="PyDMByteIndicator" name="PyDMByteIndicator_13">
+          <property name="toolTip">
+           <string/>
+          </property>
+          <property name="channel" stdset="0">
+           <string>ca://${VFS}:TRIG_RBV</string>
+          </property>
+          <property name="showLabels" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="circles" stdset="0">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_10">
+       <property name="geometry">
+        <rect>
+         <x>430</x>
+         <y>40</y>
+         <width>91</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>true</bool>
+       </property>
+       <property name="title">
+        <string>Veto</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_10">
+        <item>
+         <widget class="PyDMByteIndicator" name="PyDMByteIndicator_10">
+          <property name="toolTip">
+           <string/>
+          </property>
+          <property name="channel" stdset="0">
+           <string>calc://xVeto?vetoValveClosed=ca://${VETO}:CLS_DI_RBV&amp;vetoValveOpen=ca://${VETO}:OPN_DI_RBV&amp;expr=vetoValveClosed and not vetoValveOpen</string>
+          </property>
+          <property name="showLabels" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="circles" stdset="0">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="Line" name="line_8">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>420</y>
+         <width>501</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_6">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>210</y>
+         <width>501</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_2">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>580</y>
+         <width>101</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>true</bool>
+       </property>
+       <property name="title">
+        <string>NOT Trigger</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="PyDMByteIndicator" name="PyDMByteIndicator_2">
+          <property name="toolTip">
+           <string/>
+          </property>
+          <property name="channel" stdset="0">
+           <string>ca://${VFS}:TRIG_RBV</string>
+          </property>
+          <property name="onColor" stdset="0">
+           <color>
+            <red>100</red>
+            <green>100</green>
+            <blue>100</blue>
+           </color>
+          </property>
+          <property name="offColor" stdset="0">
+           <color>
+            <red>0</red>
+            <green>255</green>
+            <blue>0</blue>
+           </color>
+          </property>
+          <property name="showLabels" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="circles" stdset="0">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_12">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>140</y>
+         <width>331</width>
+         <height>121</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>true</bool>
+       </property>
+       <property name="title">
+        <string>2 out of 3</string>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout">
+        <item>
+         <widget class="QGroupBox" name="groupBox_6">
+          <property name="title">
+           <string>IG1 PRESS_OK</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_6">
+           <item>
+            <widget class="PyDMByteIndicator" name="PyDMByteIndicator_6">
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="channel" stdset="0">
+              <string>ca://LI2K4:IP1:GFS:01:PRESS_OK_RBV</string>
+             </property>
+             <property name="showLabels" stdset="0">
+              <bool>false</bool>
+             </property>
+             <property name="circles" stdset="0">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_7">
+          <property name="title">
+           <string>IG2 PRESS_OK</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_7">
+           <item>
+            <widget class="PyDMByteIndicator" name="PyDMByteIndicator_7">
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="channel" stdset="0">
+              <string>ca://LI2K4:IP1:GFS:02:PRESS_OK_RBV</string>
+             </property>
+             <property name="showLabels" stdset="0">
+              <bool>false</bool>
+             </property>
+             <property name="circles" stdset="0">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_8">
+          <property name="title">
+           <string>IG3 PRESS_OK</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_8">
+           <item>
+            <widget class="PyDMByteIndicator" name="PyDMByteIndicator_8">
+             <property name="toolTip">
+              <string/>
+             </property>
+             <property name="channel" stdset="0">
+              <string>ca://LI2K4:IP1:GFS:03:PRESS_OK_RBV</string>
+             </property>
+             <property name="showLabels" stdset="0">
+              <bool>false</bool>
+             </property>
+             <property name="circles" stdset="0">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="Line" name="line_10">
+       <property name="geometry">
+        <rect>
+         <x>130</x>
+         <y>430</y>
+         <width>20</width>
+         <height>101</height>
+        </rect>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_3">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>630</y>
+         <width>20</width>
+         <height>91</height>
+        </rect>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_19">
+       <property name="geometry">
+        <rect>
+         <x>280</x>
+         <y>380</y>
+         <width>101</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>true</bool>
+       </property>
+       <property name="title">
+        <string>NOT Override</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_18">
+        <item>
+         <widget class="PyDMByteIndicator" name="PyDMByteIndicator_18">
+          <property name="toolTip">
+           <string/>
+          </property>
+          <property name="channel" stdset="0">
+           <string>ca://${VFS}:OVRD_ON_RBV</string>
+          </property>
+          <property name="onColor" stdset="0">
+           <color>
+            <red>100</red>
+            <green>100</green>
+            <blue>100</blue>
+           </color>
+          </property>
+          <property name="offColor" stdset="0">
+           <color>
+            <red>0</red>
+            <green>255</green>
+            <blue>0</blue>
+           </color>
+          </property>
+          <property name="showLabels" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="circles" stdset="0">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="Line" name="line">
+       <property name="geometry">
+        <rect>
+         <x>17</x>
+         <y>620</y>
+         <width>501</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="Line" name="line_7">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>320</y>
+         <width>501</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_3">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>40</y>
+         <width>111</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>true</bool>
+       </property>
+       <property name="title">
+        <string>Veto Valve Closed</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <widget class="PyDMByteIndicator" name="PyDMByteIndicator_3">
+          <property name="toolTip">
+           <string/>
+          </property>
+          <property name="channel" stdset="0">
+           <string>ca://${VETO}:CLS_DI_RBV</string>
+          </property>
+          <property name="showLabels" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="circles" stdset="0">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_20">
+       <property name="geometry">
+        <rect>
+         <x>430</x>
+         <y>380</y>
+         <width>91</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>true</bool>
+       </property>
+       <property name="title">
+        <string>ERR_ExtFault</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_19">
+        <item>
+         <widget class="PyDMByteIndicator" name="PyDMByteIndicator_19">
+          <property name="toolTip">
+           <string/>
+          </property>
+          <property name="channel" stdset="0">
+           <string>ca://${VFS}:ERR_Ext_RBV</string>
+          </property>
+          <property name="onColor" stdset="0">
+           <color>
+            <red>0</red>
+            <green>255</green>
+            <blue>0</blue>
+           </color>
+          </property>
+          <property name="offColor" stdset="0">
+           <color>
+            <red>100</red>
+            <green>100</green>
+            <blue>100</blue>
+           </color>
+          </property>
+          <property name="showLabels" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="circles" stdset="0">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>0</x>
+         <y>0</y>
+         <width>1111</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>30</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>${VFS}</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_18">
+       <property name="geometry">
+        <rect>
+         <x>170</x>
+         <y>380</y>
+         <width>91</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>true</bool>
+       </property>
+       <property name="title">
+        <string>NOT Veto</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_17">
+        <item>
+         <widget class="PyDMByteIndicator" name="PyDMByteIndicator_17">
+          <property name="toolTip">
+           <string/>
+          </property>
+          <property name="channel" stdset="0">
+           <string>calc://xVeto</string>
+          </property>
+          <property name="onColor" stdset="0">
+           <color>
+            <red>100</red>
+            <green>100</green>
+            <blue>100</blue>
+           </color>
+          </property>
+          <property name="offColor" stdset="0">
+           <color>
+            <red>0</red>
+            <green>255</green>
+            <blue>0</blue>
+           </color>
+          </property>
+          <property name="showLabels" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="circles" stdset="0">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="Line" name="line_2">
+       <property name="geometry">
+        <rect>
+         <x>180</x>
+         <y>710</y>
+         <width>141</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_4">
+       <property name="geometry">
+        <rect>
+         <x>140</x>
+         <y>40</y>
+         <width>131</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>true</bool>
+       </property>
+       <property name="title">
+        <string>Veto Valve NOT Open</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="PyDMByteIndicator" name="PyDMByteIndicator_4">
+          <property name="toolTip">
+           <string/>
+          </property>
+          <property name="channel" stdset="0">
+           <string>ca://${VETO}:OPN_DI_RBV</string>
+          </property>
+          <property name="onColor" stdset="0">
+           <color>
+            <red>100</red>
+            <green>100</green>
+            <blue>100</blue>
+           </color>
+          </property>
+          <property name="offColor" stdset="0">
+           <color>
+            <red>0</red>
+            <green>255</green>
+            <blue>0</blue>
+           </color>
+          </property>
+          <property name="showLabels" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="circles" stdset="0">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_9">
+       <property name="geometry">
+        <rect>
+         <x>430</x>
+         <y>170</y>
+         <width>91</width>
+         <height>81</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>true</bool>
+       </property>
+       <property name="title">
+        <string>PRESS_OK</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_9">
+        <item>
+         <widget class="PyDMByteIndicator" name="PyDMByteIndicator_9">
+          <property name="toolTip">
+           <string/>
+          </property>
+          <property name="channel" stdset="0">
+           <string>calc://xPress_ok?IG1_ok=ca://LI2K4:IP1:GFS:01:PRESS_OK_RBV&amp;IG2_ok=ca://LI2K4:IP1:GFS:02:PRESS_OK_RBV&amp;IG3_ok=ca://LI2K4:IP1:GFS:03:PRESS_OK_RBV&amp;expr=(IG1_ok+IG2_ok+IG3_ok)&gt;1</string>
+          </property>
+          <property name="showLabels" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="circles" stdset="0">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="Line" name="line_5">
+       <property name="geometry">
+        <rect>
+         <x>10</x>
+         <y>80</y>
+         <width>501</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="frameShadow">
+        <enum>QFrame::Plain</enum>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+      <zorder>line_2</zorder>
+      <zorder>line_8</zorder>
+      <zorder>line</zorder>
+      <zorder>line_7</zorder>
+      <zorder>line_5</zorder>
+      <zorder>line_9</zorder>
+      <zorder>groupBox</zorder>
+      <zorder>line_4</zorder>
+      <zorder>groupBox_5</zorder>
+      <zorder>groupBox_16</zorder>
+      <zorder>groupBox_11</zorder>
+      <zorder>groupBox_17</zorder>
+      <zorder>groupBox_13</zorder>
+      <zorder>groupBox_14</zorder>
+      <zorder>groupBox_10</zorder>
+      <zorder>line_6</zorder>
+      <zorder>groupBox_2</zorder>
+      <zorder>groupBox_12</zorder>
+      <zorder>line_10</zorder>
+      <zorder>line_3</zorder>
+      <zorder>groupBox_19</zorder>
+      <zorder>groupBox_3</zorder>
+      <zorder>groupBox_20</zorder>
+      <zorder>label</zorder>
+      <zorder>groupBox_18</zorder>
+      <zorder>groupBox_4</zorder>
+      <zorder>groupBox_9</zorder>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PyDMByteIndicator</class>
+   <extends>QWidget</extends>
+   <header>pydm.widgets.byte</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>
