@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1280</width>
+    <height>791</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>TMO QPC Reboot Control</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="1" column="0">
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="title">
+      <string>TMO QPC Reboot Control - FEE ALCOVE RACK 20 (R20)</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_4">
+      <item row="0" column="0">
+       <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="macros" stdset="0">
+         <string>{&quot;QPC_ID&quot;: &quot;B940-009-R20-PCI-01&quot;, &quot;CH1&quot;: &quot;MR1K4-PIP-01&quot;, &quot;CH2&quot;: &quot;ST1K4-PIP-01&quot;, &quot;CH3&quot;: &quot;ST2K4-PIP-01&quot;, &quot;CH4&quot;: &quot;ST3K4-PIP-01&quot;, &quot;PWR&quot;: &quot;FEE:PWR:R20:01:Outlet:5&quot;}</string>
+        </property>
+        <property name="filename" stdset="0">
+         <string>./qpc</string>
+        </property>
+        <property name="loadWhenShown" stdset="0">
+         <bool>true</bool>
+        </property>
+        <property name="disconnectWhenHidden" stdset="0">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_8">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="macros" stdset="0">
+         <string>{&quot;QPC_ID&quot;: &quot;B940-009-R20-PCI-02&quot;, &quot;CH1&quot;: &quot;PC4K4-PIP-01&quot;, &quot;CH2&quot;: &quot;MR2K4-PIP-01&quot;, &quot;CH3&quot;: &quot;TV1K4-PIP-01&quot;, &quot;CH4&quot;: &quot;MR4K4-PIP-01&quot;, &quot;PWR&quot;: &quot;FEE:PWR:R20:01:Outlet:8&quot;}</string>
+        </property>
+        <property name="filename" stdset="0">
+         <string>./qpc.ui</string>
+        </property>
+        <property name="loadWhenShown" stdset="0">
+         <bool>true</bool>
+        </property>
+        <property name="disconnectWhenHidden" stdset="0">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="0">
+    <widget class="QLabel" name="label">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="text">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; color:#ff0000;&quot;&gt;Note: Clicking the 'Reboot' button will power cycle the QPC controller. If the Ion pumps are configured to Auto Restart, they will stop and then restart after the power cycle. But if the Ion pumps are not configured to Auto Restart, the operator has to restart them from the controller panel. &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="scaledContents">
+      <bool>false</bool>
+     </property>
+     <property name="wordWrap">
+      <bool>true</bool>
+     </property>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PyDMEmbeddedDisplay</class>
+   <extends>QFrame</extends>
+   <header>pydm.widgets.embedded_display</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

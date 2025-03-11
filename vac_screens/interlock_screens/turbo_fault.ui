@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>570</width>
+    <height>270</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="0" column="0">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="title">
+      <string>PA1K4:IP1:PTM:01</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="PyDMByteIndicator" name="PyDMByteIndicator">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="channel" stdset="0">
+         <string>calc://PA1K4_PTM_01_RUNNING?STATE=ca://PA1K4:IP1:PTM:01:STATE_RBV&amp;expr=STATE==2</string>
+        </property>
+        <property name="circles" stdset="0">
+         <bool>true</bool>
+        </property>
+        <property name="labels" stdset="0">
+         <stringlist>
+          <string>RUNNING</string>
+         </stringlist>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_10">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="channel" stdset="0">
+         <string>ca://PA1K4:IP1:PTM:01:AT_SPD_RBV</string>
+        </property>
+        <property name="circles" stdset="0">
+         <bool>true</bool>
+        </property>
+        <property name="labels" stdset="0">
+         <stringlist>
+          <string>AT SPEED</string>
+         </stringlist>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="1">
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="title">
+      <string>PA1K4:IP1:PTM:02</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_2">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="channel" stdset="0">
+         <string>calc://PA1K4_PTM_02_RUNNING?STATE=ca://PA1K4:IP1:PTM:02:STATE_RBV&amp;expr=STATE==2</string>
+        </property>
+        <property name="circles" stdset="0">
+         <bool>true</bool>
+        </property>
+        <property name="labels" stdset="0">
+         <stringlist>
+          <string>RUNNING</string>
+         </stringlist>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_11">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="channel" stdset="0">
+         <string>ca://PA1K4:IP1:PTM:02:AT_SPD_RBV</string>
+        </property>
+        <property name="circles" stdset="0">
+         <bool>true</bool>
+        </property>
+        <property name="labels" stdset="0">
+         <stringlist>
+          <string>AT SPEED</string>
+         </stringlist>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="2">
+    <widget class="QGroupBox" name="groupBox_3">
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="title">
+      <string>PA1K4:IP1:PTM:03</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_3">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="channel" stdset="0">
+         <string>calc://PA1K4_PTM_03_RUNNING?STATE=ca://PA1K4:IP1:PTM:03:STATE_RBV&amp;expr=STATE==2</string>
+        </property>
+        <property name="circles" stdset="0">
+         <bool>true</bool>
+        </property>
+        <property name="labels" stdset="0">
+         <stringlist>
+          <string>RUNNING</string>
+         </stringlist>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_12">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="channel" stdset="0">
+         <string>ca://PA1K4:IP1:PTM:03:AT_SPD_RBV</string>
+        </property>
+        <property name="circles" stdset="0">
+         <bool>true</bool>
+        </property>
+        <property name="labels" stdset="0">
+         <stringlist>
+          <string>AT SPEED</string>
+         </stringlist>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="0" column="3">
+    <widget class="QGroupBox" name="groupBox_4">
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="title">
+      <string>IM4K4:PPM:PTM:01</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <item>
+       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_4">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="channel" stdset="0">
+         <string>calc://IM4K4_PTM_01_RUNNING?STATE=ca://IM4K4:PPM:PTM:01:STATE_RBV&amp;expr=STATE==2</string>
+        </property>
+        <property name="circles" stdset="0">
+         <bool>true</bool>
+        </property>
+        <property name="labels" stdset="0">
+         <stringlist>
+          <string>RUNNING</string>
+         </stringlist>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_13">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="channel" stdset="0">
+         <string>ca://IM4K4:PPM:PTM:01:AT_SPD_RBV</string>
+        </property>
+        <property name="circles" stdset="0">
+         <bool>true</bool>
+        </property>
+        <property name="labels" stdset="0">
+         <stringlist>
+          <string>AT SPEED</string>
+         </stringlist>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="0">
+    <widget class="QGroupBox" name="groupBox_5">
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="title">
+      <string>LI1K4:IP1:PTM:01</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_5">
+      <item>
+       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_5">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="channel" stdset="0">
+         <string>calc://LI1K4_PTM_01_RUNNING?STATE=ca://LI1K4:IP1:PTM:01:STATE_RBV&amp;expr=STATE==2</string>
+        </property>
+        <property name="circles" stdset="0">
+         <bool>true</bool>
+        </property>
+        <property name="labels" stdset="0">
+         <stringlist>
+          <string>RUNNING</string>
+         </stringlist>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_14">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="channel" stdset="0">
+         <string>ca://LI1K4:IP1:PTM:01:AT_SPD_RBV</string>
+        </property>
+        <property name="circles" stdset="0">
+         <bool>true</bool>
+        </property>
+        <property name="labels" stdset="0">
+         <stringlist>
+          <string>AT SPEED</string>
+         </stringlist>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="1">
+    <widget class="QGroupBox" name="groupBox_6">
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="title">
+      <string>LI3K4:IP1:OUT:PTM:01</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_6">
+      <item>
+       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_6">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="channel" stdset="0">
+         <string>calc://LI3K4_PTM_01_RUNNING?STATE=ca://LI3K4:IP1:OUT:PTM:01:STATE_RBV&amp;expr=STATE==2</string>
+        </property>
+        <property name="circles" stdset="0">
+         <bool>true</bool>
+        </property>
+        <property name="labels" stdset="0">
+         <stringlist>
+          <string>RUNNING</string>
+         </stringlist>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_15">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="channel" stdset="0">
+         <string>ca://LI3K4:IP1:OUT:PTM:01:AT_SPD_RBV</string>
+        </property>
+        <property name="circles" stdset="0">
+         <bool>true</bool>
+        </property>
+        <property name="labels" stdset="0">
+         <stringlist>
+          <string>AT SPEED</string>
+         </stringlist>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="2">
+    <widget class="QGroupBox" name="groupBox_7">
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="title">
+      <string>TM1K4:PTM:01</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_7">
+      <item>
+       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_7">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="channel" stdset="0">
+         <string>calc://TM1K4_PTM_01_RUNNING?STATE=ca://TM1K4:PTM:01:STATE_RBV&amp;expr=STATE==2</string>
+        </property>
+        <property name="circles" stdset="0">
+         <bool>true</bool>
+        </property>
+        <property name="labels" stdset="0">
+         <stringlist>
+          <string>RUNNING</string>
+         </stringlist>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_16">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="channel" stdset="0">
+         <string>ca://TM1K4:PTM:01:AT_SPD_RBV</string>
+        </property>
+        <property name="circles" stdset="0">
+         <bool>true</bool>
+        </property>
+        <property name="labels" stdset="0">
+         <stringlist>
+          <string>AT SPEED</string>
+         </stringlist>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="1" column="3">
+    <widget class="QGroupBox" name="groupBox_8">
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <property name="title">
+      <string>IM5K4:PPM:PTM:01</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_8">
+      <item>
+       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_8">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="channel" stdset="0">
+         <string>calc://IM5K4_PTM_01_RUNNING?STATE=ca://IM5K4:PPM:PTM:01:STATE_RBV&amp;expr=STATE==2</string>
+        </property>
+        <property name="circles" stdset="0">
+         <bool>true</bool>
+        </property>
+        <property name="labels" stdset="0">
+         <stringlist>
+          <string>RUNNING</string>
+         </stringlist>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_17">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="channel" stdset="0">
+         <string>ca://IM5K4:PPM:PTM:01:AT_SPD_RBV</string>
+        </property>
+        <property name="circles" stdset="0">
+         <bool>true</bool>
+        </property>
+        <property name="labels" stdset="0">
+         <stringlist>
+          <string>AT SPEED</string>
+         </stringlist>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PyDMByteIndicator</class>
+   <extends>QWidget</extends>
+   <header>pydm.widgets.byte</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

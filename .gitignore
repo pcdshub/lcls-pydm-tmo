@@ -1,3 +1,14 @@
+# Terminal editor ignores
 *.swp
+*~
+
+# Core dumps
+core.*
+
+# Timechart logs
+*.log
+
+# Python pyc
 __pycache__
 *.pyc
+

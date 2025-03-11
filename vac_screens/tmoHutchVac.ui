@@ -2508,6 +2508,21 @@ FastShutter[error=&quot;Open Timeout&quot;] #icon {
        <property name="expertOphydClass" stdset="0">
         <string>pcdsdevices.valve.VGC_2S</string>
        </property>
+       <property name="ui_paths" stdset="0">
+        <stringlist>
+         <string>/cds/group/pcds/epics-dev/screens/pydm/tmo_screens/vac_screens/interlock_screens/ROUGH1_VRC_01_interlock.ui</string>
+        </stringlist>
+       </property>
+       <property name="ui_macros" stdset="0">
+        <stringlist>
+         <string></string>
+        </stringlist>
+       </property>
+       <property name="ui_titles" stdset="0">
+        <stringlist>
+         <string>Interlocks</string>
+        </stringlist>
+       </property>
        <property name="controlButtonHorizontal" stdset="0">
         <bool>false</bool>
        </property>
@@ -4415,14 +4430,9 @@ FastShutter[error=&quot;Open Timeout&quot;] #icon {
    <header>pydm.widgets.shell_command</header>
   </customwidget>
   <customwidget>
-   <class>PCDSSymbolBase</class>
-   <extends>QWidget</extends>
-   <header>pcdswidgets.vacuum.base</header>
-  </customwidget>
-  <customwidget>
-   <class>PneumaticValve</class>
+   <class>ColdCathodeGauge</class>
    <extends>PCDSSymbolBase</extends>
-   <header>pcdswidgets.vacuum.valves</header>
+   <header>pcdswidgets.vacuum.gauges</header>
   </customwidget>
   <customwidget>
    <class>FastShutter</class>
@@ -4435,14 +4445,14 @@ FastShutter[error=&quot;Open Timeout&quot;] #icon {
    <header>pcdswidgets.vacuum.pumps</header>
   </customwidget>
   <customwidget>
-   <class>TurboPump</class>
+   <class>PneumaticValve</class>
    <extends>PCDSSymbolBase</extends>
-   <header>pcdswidgets.vacuum.pumps</header>
+   <header>pcdswidgets.vacuum.valves</header>
   </customwidget>
   <customwidget>
-   <class>ScrollPump</class>
+   <class>RGA</class>
    <extends>PCDSSymbolBase</extends>
-   <header>pcdswidgets.vacuum.pumps</header>
+   <header>pcdswidgets.vacuum.others</header>
   </customwidget>
   <customwidget>
    <class>RoughGauge</class>
@@ -4450,14 +4460,19 @@ FastShutter[error=&quot;Open Timeout&quot;] #icon {
    <header>pcdswidgets.vacuum.gauges</header>
   </customwidget>
   <customwidget>
-   <class>ColdCathodeGauge</class>
+   <class>ScrollPump</class>
    <extends>PCDSSymbolBase</extends>
-   <header>pcdswidgets.vacuum.gauges</header>
+   <header>pcdswidgets.vacuum.pumps</header>
   </customwidget>
   <customwidget>
-   <class>RGA</class>
+   <class>PCDSSymbolBase</class>
+   <extends>QWidget</extends>
+   <header>pcdswidgets.vacuum.base</header>
+  </customwidget>
+  <customwidget>
+   <class>TurboPump</class>
    <extends>PCDSSymbolBase</extends>
-   <header>pcdswidgets.vacuum.others</header>
+   <header>pcdswidgets.vacuum.pumps</header>
   </customwidget>
  </customwidgets>
  <resources/>
