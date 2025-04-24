@@ -91,7 +91,7 @@
         </property>
         <property name="commands" stdset="0">
          <stringlist>
-          <string>/reg/g/pcds/epics/ioc/tmo/dc_power/ict/R1.0.0/build/iocBoot/ioc-tmo-plv-pdu-01/edm-ioc-tmo-plv-pdu-01.cmd</string>
+          <string>/reg/g/pcds/epics/ioc/tmo/dc_power/ict/R1.1.0/build/iocBoot/ioc-tmo-plv-pdu-01/edm-ioc-tmo-plv-pdu-01.cmd</string>
          </stringlist>
         </property>
         <property name="passwordProtected" stdset="0">
@@ -170,7 +170,7 @@
         </property>
         <property name="commands" stdset="0">
          <stringlist>
-          <string>/reg/g/pcds/epics-dev/kaushikm/ioc/tmo/ict/build/iocBoot/ioc-tmo-lamp-plv-pdu-01/edm-ioc-tmo-lamp-plv-pdu-01.cmd</string>
+          <string>/reg/g/pcds/epics/ioc/tmo/dc_power/ict/R1.1.0/build/iocBoot/ioc-tmo-lamp-plv-pdu-01/edm-ioc-tmo-lamp-plv-pdu-01.cmd</string>
          </stringlist>
         </property>
         <property name="passwordProtected" stdset="0">
@@ -227,7 +227,7 @@
         </property>
         <property name="commands" stdset="0">
          <stringlist>
-          <string>/reg/g/pcds/epics-dev/kaushikm/ioc/tmo/ict/build/iocBoot/ioc-tmo-cvmi-plv-pdu-01/edm-ioc-tmo-cvmi-plv-pdu-01.cmd</string>
+          <string>/reg/g/pcds/epics/ioc/tmo/dc_power/ict/R1.1.0/build/iocBoot/ioc-tmo-cvmi-plv-pdu-01/edm-ioc-tmo-cvmi-plv-pdu-01.cmd</string>
          </stringlist>
         </property>
         <property name="passwordProtected" stdset="0">
@@ -284,7 +284,7 @@
         </property>
         <property name="commands" stdset="0">
          <stringlist>
-          <string>/reg/g/pcds/epics-dev/kaushikm/ioc/tmo/ict/build/iocBoot/ioc-tmo-mrco-plv-pdu-01/edm-ioc-tmo-mrco-plv-pdu-01.cmd</string>
+          <string>/reg/g/pcds/epics/ioc/tmo/dc_power/ict/R1.1.0/build/iocBoot/ioc-tmo-mrco-plv-pdu-01/edm-ioc-tmo-mrco-plv-pdu-01.cmd</string>
          </stringlist>
         </property>
         <property name="passwordProtected" stdset="0">
@@ -341,7 +341,7 @@
         </property>
         <property name="commands" stdset="0">
          <stringlist>
-          <string>/reg/g/pcds/epics/ioc/tmo/dc_power/ict/R1.0.0/build/iocBoot/ioc-tmo-plv-pdu-02/edm-ioc-tmo-plv-pdu-02.cmd</string>
+          <string>/reg/g/pcds/epics/ioc/tmo/dc_power/ict/R1.1.0/build/iocBoot/ioc-tmo-plv-pdu-02/edm-ioc-tmo-plv-pdu-02.cmd</string>
          </stringlist>
         </property>
         <property name="passwordProtected" stdset="0">
@@ -398,7 +398,7 @@
         </property>
         <property name="commands" stdset="0">
          <stringlist>
-          <string>/reg/g/pcds/epics/ioc/tmo/dc_power/ict/R1.0.0/build/iocBoot/ioc-tmo-plv-pdu-03/edm-ioc-tmo-plv-pdu-03.cmd</string>
+          <string>/reg/g/pcds/epics/ioc/tmo/dc_power/ict/R1.1.0/build/iocBoot/ioc-tmo-plv-pdu-03/edm-ioc-tmo-plv-pdu-03.cmd</string>
          </stringlist>
         </property>
         <property name="passwordProtected" stdset="0">
@@ -455,7 +455,7 @@
         </property>
         <property name="commands" stdset="0">
          <stringlist>
-          <string>/reg/g/pcds/epics/ioc/tmo/dc_power/ict/R1.0.0/build/iocBoot/ioc-tmo-plv-pdu-04/edm-ioc-tmo-plv-pdu-04.cmd</string>
+          <string>/reg/g/pcds/epics/ioc/tmo/dc_power/ict/R1.1.0/build/iocBoot/ioc-tmo-plv-pdu-04/edm-ioc-tmo-plv-pdu-04.cmd</string>
          </stringlist>
         </property>
         <property name="passwordProtected" stdset="0">
@@ -512,7 +512,7 @@
         </property>
         <property name="commands" stdset="0">
          <stringlist>
-          <string>/reg/g/pcds/epics/ioc/tmo/dc_power/ict/R1.0.0/build/iocBoot/ioc-tmo-plv-pdu-05/edm-ioc-tmo-plv-pdu-05.cmd</string>
+          <string>/reg/g/pcds/epics/ioc/tmo/dc_power/ict/R1.1.0/build/iocBoot/ioc-tmo-plv-pdu-05/edm-ioc-tmo-plv-pdu-05.cmd</string>
          </stringlist>
         </property>
         <property name="passwordProtected" stdset="0">
@@ -569,7 +569,7 @@
         </property>
         <property name="commands" stdset="0">
          <stringlist>
-          <string>/reg/g/pcds/epics/ioc/tmo/dc_power/ict/R1.0.0/build/iocBoot/ioc-tmo-plv-pdu-06/edm-ioc-tmo-plv-pdu-06.cmd</string>
+          <string>/reg/g/pcds/epics/ioc/tmo/dc_power/ict/R1.1.0/build/iocBoot/ioc-tmo-plv-pdu-06/edm-ioc-tmo-plv-pdu-06.cmd</string>
          </stringlist>
         </property>
         <property name="passwordProtected" stdset="0">
