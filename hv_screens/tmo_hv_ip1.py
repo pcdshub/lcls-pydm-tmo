@@ -7,14 +7,15 @@ from pydm import Display
 
 def get_macros():
     # Get the dict of macros needed to display all widgets
-    names = ['CVMI']
-    prefixes = ['TMO:MPOD:01']
-    modules = range(9)
-    channels = range(23)
+
+    name = 'TMO HV1'
+    prefixes = ['TMO:MPOD:01', 'TMO:MPOD:02']
+    modules = [range(10), [5,6]]
+    channels = range(24)
 
     macros = []
-    for name, pre in zip(names, prefixes):
-        for mod in modules:
+    for pre, mpod_modules in zip(prefixes, modules):
+        for mod in mpod_modules:
             for ch in channels:
                 macros.append(
                     dict(
@@ -36,6 +37,7 @@ class TMOHV(Display):
         return os.path.dirname(__file__) + '/tmo_hv.ui'
 
     def setup_ui(self):
+        self.ui.title_lbl.setText("TMO IP1 HV")
         self.ui.hv_table.set_macros(get_macros())
         self.ui.hv_table.add_filter(
             'Hide Empty Descriptions',

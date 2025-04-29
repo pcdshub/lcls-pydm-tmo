@@ -1,0 +1,600 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>604</width>
+    <height>448</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>TMO ICT Screen</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_5">
+   <item>
+    <widget class="QLabel" name="label">
+     <property name="font">
+      <font>
+       <pointsize>12</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>TMO DC Power Controls</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="Line" name="line">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox">
+     <property name="layoutDirection">
+      <enum>Qt::LeftToRight</enum>
+     </property>
+     <property name="title">
+      <string>B940</string>
+     </property>
+     <property name="alignment">
+      <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="PyDMShellCommand" name="PyDMShellCommand_4">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="text">
+         <string>009-R16-ICT-01 (DREAM)</string>
+        </property>
+        <property name="alarmSensitiveContent" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="alarmSensitiveBorder" stdset="0">
+         <bool>true</bool>
+        </property>
+        <property name="PyDMToolTip" stdset="0">
+         <string/>
+        </property>
+        <property name="channel" stdset="0">
+         <string/>
+        </property>
+        <property name="showConfirmDialog" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="confirmMessage" stdset="0">
+         <string>Are you sure you want to proceed?</string>
+        </property>
+        <property name="environmentVariables" stdset="0">
+         <string/>
+        </property>
+        <property name="showIcon" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="redirectCommandOutput" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="allowMultipleExecutions" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="titles" stdset="0">
+         <stringlist/>
+        </property>
+        <property name="commands" stdset="0">
+         <stringlist>
+          <string>/reg/g/pcds/epics/ioc/tmo/dc_power/ict/R1.1.0/build/iocBoot/ioc-tmo-plv-pdu-01/edm-ioc-tmo-plv-pdu-01.cmd</string>
+         </stringlist>
+        </property>
+        <property name="passwordProtected" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="password" stdset="0">
+         <string/>
+        </property>
+        <property name="protectedPassword" stdset="0">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <widget class="QGroupBox" name="groupBox_2">
+     <property name="title">
+      <string>B950</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="PyDMShellCommand" name="PyDMShellCommand_2">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="text">
+         <string>100H1-PR02-ICT-01 (LAMP)</string>
+        </property>
+        <property name="alarmSensitiveContent" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="alarmSensitiveBorder" stdset="0">
+         <bool>true</bool>
+        </property>
+        <property name="PyDMToolTip" stdset="0">
+         <string/>
+        </property>
+        <property name="channel" stdset="0">
+         <string/>
+        </property>
+        <property name="showConfirmDialog" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="confirmMessage" stdset="0">
+         <string>Are you sure you want to proceed?</string>
+        </property>
+        <property name="environmentVariables" stdset="0">
+         <string/>
+        </property>
+        <property name="showIcon" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="redirectCommandOutput" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="allowMultipleExecutions" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="titles" stdset="0">
+         <stringlist/>
+        </property>
+        <property name="commands" stdset="0">
+         <stringlist>
+          <string>/reg/g/pcds/epics/ioc/tmo/dc_power/ict/R1.1.0/build/iocBoot/ioc-tmo-lamp-plv-pdu-01/edm-ioc-tmo-lamp-plv-pdu-01.cmd</string>
+         </stringlist>
+        </property>
+        <property name="passwordProtected" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="password" stdset="0">
+         <string/>
+        </property>
+        <property name="protectedPassword" stdset="0">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="PyDMShellCommand" name="PyDMShellCommand">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="text">
+         <string>100H1-PR03-ICT-01 (cVMI)</string>
+        </property>
+        <property name="alarmSensitiveContent" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="alarmSensitiveBorder" stdset="0">
+         <bool>true</bool>
+        </property>
+        <property name="PyDMToolTip" stdset="0">
+         <string/>
+        </property>
+        <property name="channel" stdset="0">
+         <string/>
+        </property>
+        <property name="showConfirmDialog" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="confirmMessage" stdset="0">
+         <string>Are you sure you want to proceed?</string>
+        </property>
+        <property name="environmentVariables" stdset="0">
+         <string/>
+        </property>
+        <property name="showIcon" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="redirectCommandOutput" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="allowMultipleExecutions" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="titles" stdset="0">
+         <stringlist/>
+        </property>
+        <property name="commands" stdset="0">
+         <stringlist>
+          <string>/reg/g/pcds/epics/ioc/tmo/dc_power/ict/R1.1.0/build/iocBoot/ioc-tmo-cvmi-plv-pdu-01/edm-ioc-tmo-cvmi-plv-pdu-01.cmd</string>
+         </stringlist>
+        </property>
+        <property name="passwordProtected" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="password" stdset="0">
+         <string/>
+        </property>
+        <property name="protectedPassword" stdset="0">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="PyDMShellCommand" name="PyDMShellCommand_3">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="text">
+         <string>100H1-PR09-ICT-01 (MRCO)</string>
+        </property>
+        <property name="alarmSensitiveContent" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="alarmSensitiveBorder" stdset="0">
+         <bool>true</bool>
+        </property>
+        <property name="PyDMToolTip" stdset="0">
+         <string/>
+        </property>
+        <property name="channel" stdset="0">
+         <string/>
+        </property>
+        <property name="showConfirmDialog" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="confirmMessage" stdset="0">
+         <string>Are you sure you want to proceed?</string>
+        </property>
+        <property name="environmentVariables" stdset="0">
+         <string/>
+        </property>
+        <property name="showIcon" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="redirectCommandOutput" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="allowMultipleExecutions" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="titles" stdset="0">
+         <stringlist/>
+        </property>
+        <property name="commands" stdset="0">
+         <stringlist>
+          <string>/reg/g/pcds/epics/ioc/tmo/dc_power/ict/R1.1.0/build/iocBoot/ioc-tmo-mrco-plv-pdu-01/edm-ioc-tmo-mrco-plv-pdu-01.cmd</string>
+         </stringlist>
+        </property>
+        <property name="passwordProtected" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="password" stdset="0">
+         <string/>
+        </property>
+        <property name="protectedPassword" stdset="0">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="PyDMShellCommand" name="PyDMShellCommand_5">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="text">
+         <string>100H1-R3-ICT-01</string>
+        </property>
+        <property name="alarmSensitiveContent" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="alarmSensitiveBorder" stdset="0">
+         <bool>true</bool>
+        </property>
+        <property name="PyDMToolTip" stdset="0">
+         <string/>
+        </property>
+        <property name="channel" stdset="0">
+         <string/>
+        </property>
+        <property name="showConfirmDialog" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="confirmMessage" stdset="0">
+         <string>Are you sure you want to proceed?</string>
+        </property>
+        <property name="environmentVariables" stdset="0">
+         <string/>
+        </property>
+        <property name="showIcon" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="redirectCommandOutput" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="allowMultipleExecutions" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="titles" stdset="0">
+         <stringlist/>
+        </property>
+        <property name="commands" stdset="0">
+         <stringlist>
+          <string>/reg/g/pcds/epics/ioc/tmo/dc_power/ict/R1.1.0/build/iocBoot/ioc-tmo-plv-pdu-02/edm-ioc-tmo-plv-pdu-02.cmd</string>
+         </stringlist>
+        </property>
+        <property name="passwordProtected" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="password" stdset="0">
+         <string/>
+        </property>
+        <property name="protectedPassword" stdset="0">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="PyDMShellCommand" name="PyDMShellCommand_6">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="text">
+         <string>100H1-R3-ICT-02</string>
+        </property>
+        <property name="alarmSensitiveContent" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="alarmSensitiveBorder" stdset="0">
+         <bool>true</bool>
+        </property>
+        <property name="PyDMToolTip" stdset="0">
+         <string/>
+        </property>
+        <property name="channel" stdset="0">
+         <string/>
+        </property>
+        <property name="showConfirmDialog" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="confirmMessage" stdset="0">
+         <string>Are you sure you want to proceed?</string>
+        </property>
+        <property name="environmentVariables" stdset="0">
+         <string/>
+        </property>
+        <property name="showIcon" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="redirectCommandOutput" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="allowMultipleExecutions" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="titles" stdset="0">
+         <stringlist/>
+        </property>
+        <property name="commands" stdset="0">
+         <stringlist>
+          <string>/reg/g/pcds/epics/ioc/tmo/dc_power/ict/R1.1.0/build/iocBoot/ioc-tmo-plv-pdu-03/edm-ioc-tmo-plv-pdu-03.cmd</string>
+         </stringlist>
+        </property>
+        <property name="passwordProtected" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="password" stdset="0">
+         <string/>
+        </property>
+        <property name="protectedPassword" stdset="0">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="PyDMShellCommand" name="PyDMShellCommand_7">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="text">
+         <string>100H1-R3-ICT-03 (DREAM)</string>
+        </property>
+        <property name="alarmSensitiveContent" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="alarmSensitiveBorder" stdset="0">
+         <bool>true</bool>
+        </property>
+        <property name="PyDMToolTip" stdset="0">
+         <string/>
+        </property>
+        <property name="channel" stdset="0">
+         <string/>
+        </property>
+        <property name="showConfirmDialog" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="confirmMessage" stdset="0">
+         <string>Are you sure you want to proceed?</string>
+        </property>
+        <property name="environmentVariables" stdset="0">
+         <string/>
+        </property>
+        <property name="showIcon" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="redirectCommandOutput" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="allowMultipleExecutions" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="titles" stdset="0">
+         <stringlist/>
+        </property>
+        <property name="commands" stdset="0">
+         <stringlist>
+          <string>/reg/g/pcds/epics/ioc/tmo/dc_power/ict/R1.1.0/build/iocBoot/ioc-tmo-plv-pdu-04/edm-ioc-tmo-plv-pdu-04.cmd</string>
+         </stringlist>
+        </property>
+        <property name="passwordProtected" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="password" stdset="0">
+         <string/>
+        </property>
+        <property name="protectedPassword" stdset="0">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="PyDMShellCommand" name="PyDMShellCommand_8">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="text">
+         <string>100H1-R3-ICT-04</string>
+        </property>
+        <property name="alarmSensitiveContent" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="alarmSensitiveBorder" stdset="0">
+         <bool>true</bool>
+        </property>
+        <property name="PyDMToolTip" stdset="0">
+         <string/>
+        </property>
+        <property name="channel" stdset="0">
+         <string/>
+        </property>
+        <property name="showConfirmDialog" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="confirmMessage" stdset="0">
+         <string>Are you sure you want to proceed?</string>
+        </property>
+        <property name="environmentVariables" stdset="0">
+         <string/>
+        </property>
+        <property name="showIcon" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="redirectCommandOutput" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="allowMultipleExecutions" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="titles" stdset="0">
+         <stringlist/>
+        </property>
+        <property name="commands" stdset="0">
+         <stringlist>
+          <string>/reg/g/pcds/epics/ioc/tmo/dc_power/ict/R1.1.0/build/iocBoot/ioc-tmo-plv-pdu-05/edm-ioc-tmo-plv-pdu-05.cmd</string>
+         </stringlist>
+        </property>
+        <property name="passwordProtected" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="password" stdset="0">
+         <string/>
+        </property>
+        <property name="protectedPassword" stdset="0">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="PyDMShellCommand" name="PyDMShellCommand_9">
+        <property name="toolTip">
+         <string/>
+        </property>
+        <property name="text">
+         <string>100H1-R3-ICT-05 (DREAM)</string>
+        </property>
+        <property name="alarmSensitiveContent" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="alarmSensitiveBorder" stdset="0">
+         <bool>true</bool>
+        </property>
+        <property name="PyDMToolTip" stdset="0">
+         <string/>
+        </property>
+        <property name="channel" stdset="0">
+         <string/>
+        </property>
+        <property name="showConfirmDialog" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="confirmMessage" stdset="0">
+         <string>Are you sure you want to proceed?</string>
+        </property>
+        <property name="environmentVariables" stdset="0">
+         <string/>
+        </property>
+        <property name="showIcon" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="redirectCommandOutput" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="allowMultipleExecutions" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="titles" stdset="0">
+         <stringlist/>
+        </property>
+        <property name="commands" stdset="0">
+         <stringlist>
+          <string>/reg/g/pcds/epics/ioc/tmo/dc_power/ict/R1.1.0/build/iocBoot/ioc-tmo-plv-pdu-06/edm-ioc-tmo-plv-pdu-06.cmd</string>
+         </stringlist>
+        </property>
+        <property name="passwordProtected" stdset="0">
+         <bool>false</bool>
+        </property>
+        <property name="password" stdset="0">
+         <string/>
+        </property>
+        <property name="protectedPassword" stdset="0">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>PyDMShellCommand</class>
+   <extends>QPushButton</extends>
+   <header>pydm.widgets.shell_command</header>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

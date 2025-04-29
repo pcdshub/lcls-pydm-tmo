@@ -28,5 +28,5 @@ edm -x -eolc \
 -m "SR620_IOC=LAS:FS14:IOC:CNT:TI" \
 -m "AG5322=LAS:FS14:CNT:FQ"	\
 -m "AG5322_IOC=LAS:FS14:IOC:CNT:FQ" \
-vitaraScreens/emb-vitara.edl \
+vitaraScreens/emb-vitara-tt.edl \
 &
