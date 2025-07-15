@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1400</width>
-    <height>1200</height>
+    <width>1000</width>
+    <height>650</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -45,8 +45,8 @@
        <rect>
         <x>0</x>
         <y>0</y>
-        <width>1400</width>
-        <height>1200</height>
+        <width>1000</width>
+        <height>650</height>
        </rect>
       </property>
       <property name="sizePolicy">
@@ -58,10 +58,10 @@
       <widget class="QGroupBox" name="groupBox_2">
        <property name="geometry">
         <rect>
-         <x>60</x>
-         <y>400</y>
-         <width>151</width>
-         <height>91</height>
+         <x>70</x>
+         <y>300</y>
+         <width>131</width>
+         <height>71</height>
         </rect>
        </property>
        <property name="autoFillBackground">
@@ -76,6 +76,15 @@
           <property name="toolTip">
            <string/>
           </property>
+          <property name="alarmSensitiveContent" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="alarmSensitiveBorder" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="PyDMToolTip" stdset="0">
+           <string/>
+          </property>
           <property name="channel" stdset="0">
            <string>ca://TMO:ROUGH1:VRC:02:CLS_DI_RBV</string>
           </property>
@@ -86,12 +95,24 @@
             <blue>0</blue>
            </color>
           </property>
+          <property name="showLabels" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="bigEndian" stdset="0">
+           <bool>false</bool>
+          </property>
           <property name="circles" stdset="0">
            <bool>true</bool>
           </property>
+          <property name="numBits" stdset="0">
+           <number>1</number>
+          </property>
+          <property name="shift" stdset="0">
+           <number>0</number>
+          </property>
           <property name="labels" stdset="0">
            <stringlist>
-            <string>CLS_DI</string>
+            <string>Is Closed</string>
            </stringlist>
           </property>
          </widget>
@@ -101,17 +122,17 @@
       <widget class="QGroupBox" name="groupBox_5">
        <property name="geometry">
         <rect>
-         <x>210</x>
-         <y>90</y>
-         <width>141</width>
-         <height>101</height>
+         <x>230</x>
+         <y>110</y>
+         <width>131</width>
+         <height>71</height>
         </rect>
        </property>
        <property name="autoFillBackground">
         <bool>true</bool>
        </property>
        <property name="title">
-        <string>EXT_OK</string>
+        <string>External Interlock</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -120,6 +141,15 @@
         <item>
          <widget class="PyDMByteIndicator" name="PyDMByteIndicator_5">
           <property name="toolTip">
+           <string/>
+          </property>
+          <property name="alarmSensitiveContent" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="alarmSensitiveBorder" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="PyDMToolTip" stdset="0">
            <string/>
           </property>
           <property name="channel" stdset="0">
@@ -133,14 +163,23 @@
            </color>
           </property>
           <property name="showLabels" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="bigEndian" stdset="0">
            <bool>false</bool>
           </property>
           <property name="circles" stdset="0">
            <bool>true</bool>
           </property>
+          <property name="numBits" stdset="0">
+           <number>1</number>
+          </property>
+          <property name="shift" stdset="0">
+           <number>0</number>
+          </property>
           <property name="labels" stdset="0">
            <stringlist>
-            <string>EXT_OK</string>
+            <string>All OK</string>
            </stringlist>
           </property>
          </widget>
@@ -151,9 +190,9 @@
        <property name="geometry">
         <rect>
          <x>120</x>
-         <y>230</y>
+         <y>200</y>
          <width>20</width>
-         <height>431</height>
+         <height>261</height>
         </rect>
        </property>
        <property name="frameShadow">
@@ -166,17 +205,17 @@
       <widget class="QGroupBox" name="groupBox_7">
        <property name="geometry">
         <rect>
-         <x>660</x>
-         <y>90</y>
-         <width>181</width>
-         <height>101</height>
+         <x>540</x>
+         <y>110</y>
+         <width>141</width>
+         <height>71</height>
         </rect>
        </property>
        <property name="autoFillBackground">
         <bool>true</bool>
        </property>
        <property name="title">
-        <string>DSG</string>
+        <string>Downstream Guage</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -223,7 +262,7 @@
           </property>
           <property name="labels" stdset="0">
            <stringlist>
-            <string>DSG.rPRESS_OK</string>
+            <string>Pressure OK</string>
            </stringlist>
           </property>
          </widget>
@@ -233,10 +272,10 @@
       <widget class="QGroupBox" name="groupBox_6">
        <property name="geometry">
         <rect>
-         <x>220</x>
-         <y>830</y>
-         <width>121</width>
-         <height>91</height>
+         <x>230</x>
+         <y>550</y>
+         <width>151</width>
+         <height>71</height>
         </rect>
        </property>
        <property name="autoFillBackground">
@@ -245,10 +284,19 @@
        <property name="title">
         <string>IP1 Ethercat Error</string>
        </property>
-       <layout class="QVBoxLayout" name="verticalLayout_6">
-        <item>
+       <layout class="QGridLayout" name="gridLayout_5">
+        <item row="0" column="0">
          <widget class="PyDMByteIndicator" name="PyDMByteIndicator_6">
           <property name="toolTip">
+           <string/>
+          </property>
+          <property name="alarmSensitiveContent" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="alarmSensitiveBorder" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="PyDMToolTip" stdset="0">
            <string/>
           </property>
           <property name="channel" stdset="0">
@@ -269,14 +317,23 @@
            </color>
           </property>
           <property name="showLabels" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="bigEndian" stdset="0">
            <bool>false</bool>
           </property>
           <property name="circles" stdset="0">
            <bool>true</bool>
           </property>
+          <property name="numBits" stdset="0">
+           <number>1</number>
+          </property>
+          <property name="shift" stdset="0">
+           <number>0</number>
+          </property>
           <property name="labels" stdset="0">
            <stringlist>
-            <string>OK</string>
+            <string>No Error</string>
            </stringlist>
           </property>
          </widget>
@@ -289,7 +346,7 @@
          <x>270</x>
          <y>130</y>
          <width>21</width>
-         <height>841</height>
+         <height>491</height>
         </rect>
        </property>
        <property name="frameShadow">
@@ -302,17 +359,17 @@
       <widget class="QGroupBox" name="groupBox_8">
        <property name="geometry">
         <rect>
-         <x>420</x>
-         <y>90</y>
-         <width>181</width>
-         <height>101</height>
+         <x>390</x>
+         <y>110</y>
+         <width>131</width>
+         <height>71</height>
         </rect>
        </property>
        <property name="autoFillBackground">
         <bool>true</bool>
        </property>
        <property name="title">
-        <string>USG</string>
+        <string>Upstream Guage</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -359,7 +416,7 @@
           </property>
           <property name="labels" stdset="0">
            <stringlist>
-            <string>USG.rPRESS_OK</string>
+            <string>Pressure OK</string>
            </stringlist>
           </property>
          </widget>
@@ -370,7 +427,7 @@
        <property name="geometry">
         <rect>
          <x>130</x>
-         <y>650</y>
+         <y>450</y>
          <width>151</width>
          <height>21</height>
         </rect>
@@ -387,7 +444,7 @@
         <rect>
          <x>60</x>
          <y>140</y>
-         <width>1201</width>
+         <width>821</width>
          <height>20</height>
         </rect>
        </property>
@@ -432,10 +489,10 @@
       <widget class="QGroupBox" name="groupBox">
        <property name="geometry">
         <rect>
-         <x>250</x>
-         <y>280</y>
-         <width>181</width>
-         <height>91</height>
+         <x>230</x>
+         <y>210</y>
+         <width>151</width>
+         <height>71</height>
         </rect>
        </property>
        <property name="autoFillBackground">
@@ -444,58 +501,57 @@
        <property name="title">
         <string>Pressure Differential OK</string>
        </property>
-       <widget class="PyDMByteIndicator" name="PyDMByteIndicator">
-        <property name="geometry">
-         <rect>
-          <x>-10</x>
-          <y>30</y>
-          <width>161</width>
-          <height>51</height>
-         </rect>
-        </property>
-        <property name="toolTip">
-         <string/>
-        </property>
-        <property name="channel" stdset="0">
-         <string>calc://DifPressureOk?gpi_02_press=ca://TMO:ROUGH1:GPI:02:PRESS_RBV&amp;gpi_03_press=ca://TMO:ROUGH1:GPI:03:PRESS_RBV&amp;gpi_02_press_ok=ca://TMO:ROUGH1:GPI:02:PRESS_OK_RBV&amp;gpi_03_press_ok=ca://TMO:ROUGH1:GPI:03:PRESS_OK_RBV&amp;expr=(abs(gpi_02_press - gpi_03_press) &lt;= 0.1) and (gpi_02_press_ok and gpi_03_press_ok)</string>
-        </property>
-        <property name="offColor" stdset="0">
-         <color>
-          <red>255</red>
-          <green>0</green>
-          <blue>0</blue>
-         </color>
-        </property>
-        <property name="orientation" stdset="0">
-         <enum>Qt::Vertical</enum>
-        </property>
-        <property name="showLabels" stdset="0">
-         <bool>true</bool>
-        </property>
-        <property name="circles" stdset="0">
-         <bool>true</bool>
-        </property>
-        <property name="labels" stdset="0">
-         <stringlist>
-          <string>Pressure OK</string>
-         </stringlist>
-        </property>
-       </widget>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="0" column="0">
+         <widget class="PyDMByteIndicator" name="PyDMByteIndicator">
+          <property name="toolTip">
+           <string/>
+          </property>
+          <property name="channel" stdset="0">
+           <string>calc://DifPressureOk?gpi_02_press=ca://TMO:ROUGH1:GPI:02:PRESS_RBV&amp;gpi_03_press=ca://TMO:ROUGH1:GPI:03:PRESS_RBV&amp;gpi_02_press_ok=ca://TMO:ROUGH1:GPI:02:PRESS_OK_RBV&amp;gpi_03_press_ok=ca://TMO:ROUGH1:GPI:03:PRESS_OK_RBV&amp;expr=(abs(gpi_02_press - gpi_03_press) &lt;= 0.1) and (gpi_02_press_ok and gpi_03_press_ok)</string>
+          </property>
+          <property name="offColor" stdset="0">
+           <color>
+            <red>255</red>
+            <green>0</green>
+            <blue>0</blue>
+           </color>
+          </property>
+          <property name="orientation" stdset="0">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="showLabels" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="circles" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="labels" stdset="0">
+           <stringlist>
+            <string>Pressure OK</string>
+           </stringlist>
+          </property>
+         </widget>
+        </item>
+       </layout>
       </widget>
       <widget class="QGroupBox" name="groupBox_9">
        <property name="geometry">
         <rect>
-         <x>1200</x>
-         <y>90</y>
-         <width>131</width>
-         <height>101</height>
+         <x>840</x>
+         <y>110</y>
+         <width>81</width>
+         <height>71</height>
         </rect>
        </property>
        <property name="autoFillBackground">
         <bool>true</bool>
        </property>
        <property name="title">
-        <string>OPN_OK</string>
+        <string>Open OK</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_9">
         <item>
@@ -531,10 +587,10 @@
       <widget class="QGroupBox" name="groupBox_10">
        <property name="geometry">
         <rect>
-         <x>250</x>
-         <y>400</y>
-         <width>181</width>
-         <height>91</height>
+         <x>230</x>
+         <y>290</y>
+         <width>151</width>
+         <height>71</height>
         </rect>
        </property>
        <property name="autoFillBackground">
@@ -543,54 +599,68 @@
        <property name="title">
         <string>TMO:ROUGH1:GPI:02</string>
        </property>
-       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_3">
-        <property name="geometry">
-         <rect>
-          <x>0</x>
-          <y>30</y>
-          <width>171</width>
-          <height>51</height>
-         </rect>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>16777215</width>
-          <height>16777215</height>
-         </size>
-        </property>
-        <property name="toolTip">
-         <string/>
-        </property>
-        <property name="channel" stdset="0">
-         <string>ca://TMO:ROUGH1:GPI:02:PRESS_OK_RBV</string>
-        </property>
-        <property name="offColor" stdset="0">
-         <color>
-          <red>255</red>
-          <green>0</green>
-          <blue>0</blue>
-         </color>
-        </property>
-        <property name="showLabels" stdset="0">
-         <bool>true</bool>
-        </property>
-        <property name="circles" stdset="0">
-         <bool>true</bool>
-        </property>
-        <property name="labels" stdset="0">
-         <stringlist>
-          <string>GPI:02.rPRESS_OK</string>
-         </stringlist>
-        </property>
-       </widget>
+       <layout class="QGridLayout" name="gridLayout">
+        <item row="0" column="0">
+         <widget class="PyDMByteIndicator" name="PyDMByteIndicator_3">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="toolTip">
+           <string/>
+          </property>
+          <property name="alarmSensitiveContent" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="alarmSensitiveBorder" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="PyDMToolTip" stdset="0">
+           <string/>
+          </property>
+          <property name="channel" stdset="0">
+           <string>ca://TMO:ROUGH1:GPI:02:PRESS_OK_RBV</string>
+          </property>
+          <property name="offColor" stdset="0">
+           <color>
+            <red>255</red>
+            <green>0</green>
+            <blue>0</blue>
+           </color>
+          </property>
+          <property name="showLabels" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="bigEndian" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="circles" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="numBits" stdset="0">
+           <number>1</number>
+          </property>
+          <property name="shift" stdset="0">
+           <number>0</number>
+          </property>
+          <property name="labels" stdset="0">
+           <stringlist>
+            <string>Pressure OK</string>
+           </stringlist>
+          </property>
+         </widget>
+        </item>
+       </layout>
       </widget>
       <widget class="QGroupBox" name="groupBox_11">
        <property name="geometry">
         <rect>
-         <x>250</x>
-         <y>530</y>
-         <width>181</width>
-         <height>91</height>
+         <x>230</x>
+         <y>380</y>
+         <width>151</width>
+         <height>71</height>
         </rect>
        </property>
        <property name="autoFillBackground">
@@ -599,52 +669,66 @@
        <property name="title">
         <string>TMI:ROUGH1:GPI:03</string>
        </property>
-       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_10">
-        <property name="geometry">
-         <rect>
-          <x>0</x>
-          <y>30</y>
-          <width>171</width>
-          <height>51</height>
-         </rect>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>16777215</width>
-          <height>16777215</height>
-         </size>
-        </property>
-        <property name="toolTip">
-         <string/>
-        </property>
-        <property name="channel" stdset="0">
-         <string>ca://TMO:ROUGH1:GPI:01:PRESS_OK_RBV</string>
-        </property>
-        <property name="offColor" stdset="0">
-         <color>
-          <red>255</red>
-          <green>0</green>
-          <blue>0</blue>
-         </color>
-        </property>
-        <property name="showLabels" stdset="0">
-         <bool>true</bool>
-        </property>
-        <property name="circles" stdset="0">
-         <bool>true</bool>
-        </property>
-        <property name="labels" stdset="0">
-         <stringlist>
-          <string>GPI:03:rPRESS_OK</string>
-         </stringlist>
-        </property>
-       </widget>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="0">
+         <widget class="PyDMByteIndicator" name="PyDMByteIndicator_10">
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="toolTip">
+           <string/>
+          </property>
+          <property name="alarmSensitiveContent" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="alarmSensitiveBorder" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="PyDMToolTip" stdset="0">
+           <string/>
+          </property>
+          <property name="channel" stdset="0">
+           <string>ca://TMO:ROUGH1:GPI:01:PRESS_OK_RBV</string>
+          </property>
+          <property name="offColor" stdset="0">
+           <color>
+            <red>255</red>
+            <green>0</green>
+            <blue>0</blue>
+           </color>
+          </property>
+          <property name="showLabels" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="bigEndian" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="circles" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="numBits" stdset="0">
+           <number>1</number>
+          </property>
+          <property name="shift" stdset="0">
+           <number>0</number>
+          </property>
+          <property name="labels" stdset="0">
+           <stringlist>
+            <string>Pressure OK</string>
+           </stringlist>
+          </property>
+         </widget>
+        </item>
+       </layout>
       </widget>
       <widget class="Line" name="line_10">
        <property name="geometry">
         <rect>
          <x>130</x>
-         <y>220</y>
+         <y>190</y>
          <width>151</width>
          <height>21</height>
         </rect>
@@ -660,9 +744,9 @@
        <property name="geometry">
         <rect>
          <x>230</x>
-         <y>700</y>
-         <width>161</width>
-         <height>91</height>
+         <y>470</y>
+         <width>151</width>
+         <height>71</height>
         </rect>
        </property>
        <property name="autoFillBackground">
@@ -671,118 +755,54 @@
        <property name="title">
         <string>TMO:ROUGH1:VRC:01</string>
        </property>
-       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_15">
-        <property name="geometry">
-         <rect>
-          <x>22</x>
-          <y>30</y>
-          <width>131</width>
-          <height>51</height>
-         </rect>
-        </property>
-        <property name="toolTip">
-         <string/>
-        </property>
-        <property name="alarmSensitiveContent" stdset="0">
-         <bool>false</bool>
-        </property>
-        <property name="alarmSensitiveBorder" stdset="0">
-         <bool>true</bool>
-        </property>
-        <property name="PyDMToolTip" stdset="0">
-         <string/>
-        </property>
-        <property name="channel" stdset="0">
-         <string>ca://TMO:ROUGH1:VRC:01:OPN_DI_RBV</string>
-        </property>
-        <property name="offColor" stdset="0">
-         <color>
-          <red>255</red>
-          <green>0</green>
-          <blue>0</blue>
-         </color>
-        </property>
-        <property name="showLabels" stdset="0">
-         <bool>true</bool>
-        </property>
-        <property name="bigEndian" stdset="0">
-         <bool>false</bool>
-        </property>
-        <property name="circles" stdset="0">
-         <bool>true</bool>
-        </property>
-        <property name="numBits" stdset="0">
-         <number>1</number>
-        </property>
-        <property name="shift" stdset="0">
-         <number>0</number>
-        </property>
-        <property name="labels" stdset="0">
-         <stringlist>
-          <string>OPN_DI</string>
-         </stringlist>
-        </property>
-       </widget>
-      </widget>
-      <widget class="PyDMByteIndicator" name="PyDMByteIndicator_16">
-       <property name="geometry">
-        <rect>
-         <x>240</x>
-         <y>970</y>
-         <width>81</width>
-         <height>81</height>
-        </rect>
-       </property>
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="channel" stdset="0">
-        <string>ca://TMO:IP1:ENDSTATION:ETHERCAT_ERROR_RBV</string>
-       </property>
-       <property name="onColor" stdset="0">
-        <color>
-         <red>100</red>
-         <green>100</green>
-         <blue>100</blue>
-        </color>
-       </property>
-       <property name="offColor" stdset="0">
-        <color>
-         <red>0</red>
-         <green>255</green>
-         <blue>0</blue>
-        </color>
-       </property>
-       <property name="showLabels" stdset="0">
-        <bool>false</bool>
-       </property>
-       <property name="circles" stdset="0">
-        <bool>true</bool>
-       </property>
-       <property name="labels" stdset="0">
-        <stringlist>
-         <string>OK</string>
-        </stringlist>
-       </property>
-      </widget>
-      <widget class="PyDMLabel" name="PyDMLabel_7">
-       <property name="geometry">
-        <rect>
-         <x>250</x>
-         <y>1000</y>
-         <width>61</width>
-         <height>21</height>
-        </rect>
-       </property>
-       <property name="toolTip">
-        <string/>
-       </property>
-       <property name="text">
-        <string>START</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
+       <layout class="QGridLayout" name="gridLayout_4">
+        <item row="0" column="0">
+         <widget class="PyDMByteIndicator" name="PyDMByteIndicator_15">
+          <property name="toolTip">
+           <string/>
+          </property>
+          <property name="alarmSensitiveContent" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="alarmSensitiveBorder" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="PyDMToolTip" stdset="0">
+           <string/>
+          </property>
+          <property name="channel" stdset="0">
+           <string>ca://TMO:ROUGH1:VRC:01:OPN_DI_RBV</string>
+          </property>
+          <property name="offColor" stdset="0">
+           <color>
+            <red>255</red>
+            <green>0</green>
+            <blue>0</blue>
+           </color>
+          </property>
+          <property name="showLabels" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="bigEndian" stdset="0">
+           <bool>false</bool>
+          </property>
+          <property name="circles" stdset="0">
+           <bool>true</bool>
+          </property>
+          <property name="numBits" stdset="0">
+           <number>1</number>
+          </property>
+          <property name="shift" stdset="0">
+           <number>0</number>
+          </property>
+          <property name="labels" stdset="0">
+           <stringlist>
+            <string>Is Opened</string>
+           </stringlist>
+          </property>
+         </widget>
+        </item>
+       </layout>
       </widget>
       <widget class="PyDMByteIndicator" name="PyDMByteIndicator_17">
        <property name="geometry">
@@ -844,80 +864,13 @@
         <set>Qt::AlignCenter</set>
        </property>
       </widget>
-      <widget class="QGroupBox" name="groupBox_13">
-       <property name="geometry">
-        <rect>
-         <x>900</x>
-         <y>90</y>
-         <width>121</width>
-         <height>101</height>
-        </rect>
-       </property>
-       <property name="autoFillBackground">
-        <bool>true</bool>
-       </property>
-       <property name="title">
-        <string>USG Below Setpoint</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignCenter</set>
-       </property>
-       <layout class="QVBoxLayout" name="verticalLayout_11">
-        <item>
-         <widget class="PyDMByteIndicator" name="PyDMByteIndicator_18">
-          <property name="toolTip">
-           <string/>
-          </property>
-          <property name="alarmSensitiveContent" stdset="0">
-           <bool>false</bool>
-          </property>
-          <property name="alarmSensitiveBorder" stdset="0">
-           <bool>true</bool>
-          </property>
-          <property name="PyDMToolTip" stdset="0">
-           <string/>
-          </property>
-          <property name="channel" stdset="0">
-           <string>calc://US_AT_VAC?AT_VAC=ca://TMO:ROUGH1:VRC:01:AT_VAC_RBV&amp;US_PRESS=ca://TMO:ROUGH1:GPI:02:PRESS_RBV&amp;US_PRESS_HYS=ca://TMO:ROUGH1:VRC:01:AT_VAC_HYS_RBV&amp;US_PRESS_OK=ca://TMO:ROUGH1:GPI:02:PRESS_OK_RBV&amp;expr=True if AT_VAC else (US_PRESS &lt; US_PRESS_HYS and US_PRESS_OK)</string>
-          </property>
-          <property name="offColor" stdset="0">
-           <color>
-            <red>255</red>
-            <green>0</green>
-            <blue>0</blue>
-           </color>
-          </property>
-          <property name="showLabels" stdset="0">
-           <bool>false</bool>
-          </property>
-          <property name="bigEndian" stdset="0">
-           <bool>false</bool>
-          </property>
-          <property name="circles" stdset="0">
-           <bool>true</bool>
-          </property>
-          <property name="numBits" stdset="0">
-           <number>1</number>
-          </property>
-          <property name="shift" stdset="0">
-           <number>0</number>
-          </property>
-          <property name="labels" stdset="0">
-           <stringlist>
-            <string>USG.rPRESS_OK</string>
-           </stringlist>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </widget>
       <widget class="QGroupBox" name="groupBox_14">
        <property name="geometry">
         <rect>
-         <x>940</x>
-         <y>220</y>
-         <width>181</width>
-         <height>101</height>
+         <x>700</x>
+         <y>230</y>
+         <width>121</width>
+         <height>71</height>
         </rect>
        </property>
        <property name="autoFillBackground">
@@ -981,7 +934,7 @@
       <widget class="Line" name="line_11">
        <property name="geometry">
         <rect>
-         <x>870</x>
+         <x>680</x>
          <y>150</y>
          <width>20</width>
          <height>131</height>
@@ -997,9 +950,9 @@
       <widget class="Line" name="line_12">
        <property name="geometry">
         <rect>
-         <x>880</x>
+         <x>690</x>
          <y>270</y>
-         <width>301</width>
+         <width>141</width>
          <height>21</height>
         </rect>
        </property>
@@ -1013,7 +966,7 @@
       <widget class="Line" name="line_13">
        <property name="geometry">
         <rect>
-         <x>1170</x>
+         <x>820</x>
          <y>150</y>
          <width>20</width>
          <height>131</height>
@@ -1029,17 +982,17 @@
       <widget class="QGroupBox" name="groupBox_15">
        <property name="geometry">
         <rect>
-         <x>1040</x>
-         <y>90</y>
+         <x>700</x>
+         <y>110</y>
          <width>121</width>
-         <height>101</height>
+         <height>71</height>
         </rect>
        </property>
        <property name="autoFillBackground">
         <bool>true</bool>
        </property>
        <property name="title">
-        <string>DSG Below Setpoint</string>
+        <string>AT VAC</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -1060,7 +1013,7 @@
            <string/>
           </property>
           <property name="channel" stdset="0">
-           <string>calc://DS_AT_VAC?AT_VAC=ca://TMO:ROUGH1:VRC:01:AT_VAC_RBV&amp;US_PRESS=ca://TMO:ROUGH1:GPI:01:PRESS_RBV&amp;DS_PRESS_HYS=ca://TMO:ROUGH1:VRC:01:AT_VAC_HYS_DS_RBV&amp;DS_PRESS_OK=ca://TMO:ROUGH1:GPI:01:PRESS_OK_RBV&amp;expr=True if AT_VAC else (US_PRESS &lt; DS_PRESS_HYS and DS_PRESS_OK)</string>
+           <string>ca://TMO:ROUGH1:VRC:01:AT_VAC_RBV</string>
           </property>
           <property name="offColor" stdset="0">
            <color>
@@ -1070,7 +1023,7 @@
            </color>
           </property>
           <property name="showLabels" stdset="0">
-           <bool>false</bool>
+           <bool>true</bool>
           </property>
           <property name="bigEndian" stdset="0">
            <bool>false</bool>
@@ -1086,12 +1039,54 @@
           </property>
           <property name="labels" stdset="0">
            <stringlist>
-            <string>USG.rPRESS_OK</string>
+            <string>Guages OK</string>
            </stringlist>
           </property>
          </widget>
         </item>
        </layout>
+      </widget>
+      <widget class="QGroupBox" name="groupBox_3">
+       <property name="geometry">
+        <rect>
+         <x>460</x>
+         <y>310</y>
+         <width>461</width>
+         <height>71</height>
+        </rect>
+       </property>
+       <property name="autoFillBackground">
+        <bool>true</bool>
+       </property>
+       <property name="title">
+        <string>Guide</string>
+       </property>
+       <widget class="QLabel" name="label_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>40</y>
+          <width>43</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>AT VAC</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_3">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>30</y>
+          <width>331</width>
+          <height>31</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Upstream and Downstream pressure readings OK and &lt;br/&gt;both are below the hysteresis setpoint. &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
       </widget>
       <zorder>line_12</zorder>
       <zorder>line_3</zorder>
@@ -1110,15 +1105,13 @@
       <zorder>groupBox_11</zorder>
       <zorder>line_10</zorder>
       <zorder>groupBox_12</zorder>
-      <zorder>PyDMByteIndicator_16</zorder>
-      <zorder>PyDMLabel_7</zorder>
       <zorder>PyDMByteIndicator_17</zorder>
       <zorder>PyDMLabel_8</zorder>
-      <zorder>groupBox_13</zorder>
       <zorder>groupBox_14</zorder>
       <zorder>line_11</zorder>
       <zorder>line_13</zorder>
       <zorder>groupBox_15</zorder>
+      <zorder>groupBox_3</zorder>
      </widget>
     </widget>
    </item>
