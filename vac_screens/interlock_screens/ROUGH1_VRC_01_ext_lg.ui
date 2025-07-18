@@ -179,7 +179,7 @@
           </property>
           <property name="labels" stdset="0">
            <stringlist>
-            <string>All OK</string>
+            <string>Ext_ILK OK</string>
            </stringlist>
           </property>
          </widget>
@@ -215,7 +215,7 @@
         <bool>true</bool>
        </property>
        <property name="title">
-        <string>Downstream Guage</string>
+        <string>TMO:ROUGH1:GPI:01</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -369,7 +369,7 @@
         <bool>true</bool>
        </property>
        <property name="title">
-        <string>Upstream Guage</string>
+        <string>TMO:ROUGH1:GPI:02</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -877,7 +877,7 @@
         <bool>true</bool>
        </property>
        <property name="title">
-        <string>Dis_DPILK</string>
+        <string>Differential ILK</string>
        </property>
        <property name="alignment">
         <set>Qt::AlignCenter</set>
@@ -908,7 +908,7 @@
            </color>
           </property>
           <property name="showLabels" stdset="0">
-           <bool>false</bool>
+           <bool>true</bool>
           </property>
           <property name="bigEndian" stdset="0">
            <bool>false</bool>
@@ -924,7 +924,7 @@
           </property>
           <property name="labels" stdset="0">
            <stringlist>
-            <string>DSG.rPRESS_OK</string>
+            <string>Enabled</string>
            </stringlist>
           </property>
          </widget>
