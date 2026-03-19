@@ -26,29 +26,10 @@
          <string/>
         </property>
         <property name="macros" stdset="0">
-         <string>{&quot;QPC_ID&quot;: &quot;B940-009-R20-PCI-01&quot;, &quot;CH1&quot;: &quot;MR1K4-PIP-01&quot;, &quot;CH2&quot;: &quot;ST1K4-PIP-01&quot;, &quot;CH3&quot;: &quot;ST2K4-PIP-01&quot;, &quot;CH4&quot;: &quot;ST3K4-PIP-01&quot;, &quot;PWR&quot;: &quot;FEE:PWR:R20:01:Outlet:5&quot;}</string>
+         <string>{&quot;QPC_ID&quot;: &quot;B940-009-R20-PCI-02&quot;, &quot;CH1&quot;: &quot;MR1K4-PIP-01&quot;, &quot;CH2&quot;: &quot;ST1K4-PIP-01&quot;, &quot;CH3&quot;: &quot;ST2K4-PIP-01&quot;, &quot;CH4&quot;: &quot;ST3K4-PIP-01&quot;, &quot;PWR&quot;: &quot;FEE:PWR:R20:01:Outlet:5&quot;, &quot;CH3&quot;: &quot;&quot;}</string>
         </property>
         <property name="filename" stdset="0">
          <string>./qpc</string>
-        </property>
-        <property name="loadWhenShown" stdset="0">
-         <bool>true</bool>
-        </property>
-        <property name="disconnectWhenHidden" stdset="0">
-         <bool>true</bool>
-        </property>
-       </widget>
-      </item>
-      <item row="0" column="1">
-       <widget class="PyDMEmbeddedDisplay" name="PyDMEmbeddedDisplay_8">
-        <property name="toolTip">
-         <string/>
-        </property>
-        <property name="macros" stdset="0">
-         <string>{&quot;QPC_ID&quot;: &quot;B940-009-R20-PCI-02&quot;, &quot;CH1&quot;: &quot;PC4K4-PIP-01&quot;, &quot;CH2&quot;: &quot;MR2K4-PIP-01&quot;, &quot;CH3&quot;: &quot;TV1K4-PIP-01&quot;, &quot;CH4&quot;: &quot;MR4K4-PIP-01&quot;, &quot;PWR&quot;: &quot;FEE:PWR:R20:01:Outlet:8&quot;}</string>
-        </property>
-        <property name="filename" stdset="0">
-         <string>./qpc.ui</string>
         </property>
         <property name="loadWhenShown" stdset="0">
          <bool>true</bool>
@@ -87,6 +68,7 @@
    <class>PyDMEmbeddedDisplay</class>
    <extends>QFrame</extends>
    <header>pydm.widgets.embedded_display</header>
+   <container>1</container>
   </customwidget>
  </customwidgets>
  <resources/>
